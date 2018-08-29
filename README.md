@@ -2,6 +2,8 @@
 
 Code exercises and personal notes from the book [Algorithms (4th edition)](https://www.amazon.com/Algorithms-4th-Robert-Sedgewick/dp/032157351X) by Robert Sedgewick and Kevin Wayne.
 
+> :warning: still in progress...
+
 ## Resources
 
 * [Video Lectures](http://www.informit.com/store/algorithms-video-lectures-24-part-lecture-series-9780134384436)
@@ -11,7 +13,7 @@ Code exercises and personal notes from the book [Algorithms (4th edition)](https
 
 ### 1. Fundamentals
 
-* [Greatest Common Divisor](./01-fundamentals/algorithms/greatest-common-divisor.js)
+* [Euclidean Algorithm](./01-fundamentals/algorithms/euclidean.md)
 
 #### 1.1 Basic Programming Model
 

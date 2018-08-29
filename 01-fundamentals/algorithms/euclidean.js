@@ -1,6 +1,6 @@
 const { validateIsInteger } = require('../../utils');
 
-function greatestCommonDivisor(p, q) {
+function euclidean(p, q) {
   validateIsInteger('p')(p);
   validateIsInteger('q')(q);
 
@@ -13,4 +13,4 @@ function greatestCommonDivisor(p, q) {
   return gcd(p, q);
 }
 
-module.exports = greatestCommonDivisor;
+module.exports = euclidean;

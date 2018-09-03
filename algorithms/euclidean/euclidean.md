@@ -4,6 +4,19 @@ Finds the Greatest Common Divisor of two numbers.
 
 ## Implementations
 
+### Java
+
+```java
+public static int gcd(int p, int q) {
+  if (q == 0)
+    return p;
+  int r = p % q;
+  return gcd(q, r);
+}
+```
+
+> [Euclidean.java](./Euclidean.js)
+
 ### JavaScript
 
 ```js

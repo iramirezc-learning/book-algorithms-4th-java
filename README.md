@@ -8,12 +8,48 @@ Code exercises and personal notes from the book [Algorithms (4th edition)](https
 
 * [Video Lectures](http://www.informit.com/store/algorithms-video-lectures-24-part-lecture-series-9780134384436)
 * [Booksite](https://algs4.cs.princeton.edu)
+* [Standard Libraries](https://introcs.cs.princeton.edu/java/stdlib/)
+* [Code](https://algs4.cs.princeton.edu/code/)
+
+## Installation of `algs4.jar`
+
+Follow these instructions ["Installing the textbook libraries"](https://algs4.cs.princeton.edu/code/) to install `algs4.jar`.
+
+### For Mac OS X and `.zshrc`
+
+Download  `algs4.jar` file to folder `~/algs4`
+
+Edit `~/.zprofile` file:
+
+```sh
+sudo vim ~/.zprofile
+```
+
+Add the following line and save:
+
+```txt
+export CLASSPATH=$CLASSPATH:~/algs4/algs4.jar
+```
+
+Do NOT forget to include the imports you need in your code:
+
+```java
+# in your code
+import edu.princeton.cs.algs4.StdIn;
+import edu.princeton.cs.algs4.StdOut;
+```
+
+Compile your java class:
+
+```sh
+javac BinarySearch.java
+```
 
 ## Algorithms & Data Structures
 
 ### 1. Fundamentals
 
-* [Euclidean Algorithm](./01-fundamentals/algorithms/euclidean.md)
+* [Euclidean Algorithm](./algorithms/euclidean/euclidean.md)
 
 #### 1.1 Basic Programming Model
 
@@ -27,7 +63,7 @@ Code exercises and personal notes from the book [Algorithms (4th edition)](https
 
 ### 6. Context
 
-## Tests
+## Tests (Node.js)
 
 Install `mocha` globally:
 

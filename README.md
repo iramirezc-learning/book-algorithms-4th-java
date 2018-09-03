@@ -50,6 +50,7 @@ javac BinarySearch.java
 ### 1. Fundamentals
 
 * [Euclidean Algorithm](./algorithms/euclidean/euclidean.md)
+* [Binary Search](./algorithms/binary-search/binary-search.md)
 
 #### 1.1 Basic Programming Model
 

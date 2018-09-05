@@ -9,7 +9,7 @@ Code exercises and personal notes from the book [Algorithms (4th edition)](https
 * [Video Lectures](http://www.informit.com/store/algorithms-video-lectures-24-part-lecture-series-9780134384436)
 * [Booksite](https://algs4.cs.princeton.edu)
 * [Standard Libraries](https://introcs.cs.princeton.edu/java/stdlib/)
-* [Code](https://algs4.cs.princeton.edu/code/)
+* [Code & Solutions](https://algs4.cs.princeton.edu/code/)
 
 ## Installation of `algs4.jar`
 

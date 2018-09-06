@@ -1,0 +1,249 @@
+# Results for recursive `fib(n)` until `60` number
+
+```sh
+➜  code git:(master) ✗ java Exercise_1_1_19
+0 0
+Total time in nanoseconds: 16006073
+Total time in seconds: 0
+Total time in minutes: 0
+1 1
+Total time in nanoseconds: 31323
+Total time in seconds: 0
+Total time in minutes: 0
+2 1
+Total time in nanoseconds: 30950
+Total time in seconds: 0
+Total time in minutes: 0
+3 2
+Total time in nanoseconds: 23962
+Total time in seconds: 0
+Total time in minutes: 0
+4 3
+Total time in nanoseconds: 23414
+Total time in seconds: 0
+Total time in minutes: 0
+5 5
+Total time in nanoseconds: 26602
+Total time in seconds: 0
+Total time in minutes: 0
+6 8
+Total time in nanoseconds: 19428
+Total time in seconds: 0
+Total time in minutes: 0
+7 13
+Total time in nanoseconds: 74382
+Total time in seconds: 0
+Total time in minutes: 0
+8 21
+Total time in nanoseconds: 26410
+Total time in seconds: 0
+Total time in minutes: 0
+9 34
+Total time in nanoseconds: 433870
+Total time in seconds: 0
+Total time in minutes: 0
+10 55
+Total time in nanoseconds: 923423
+Total time in seconds: 0
+Total time in minutes: 0
+11 89
+Total time in nanoseconds: 41460
+Total time in seconds: 0
+Total time in minutes: 0
+12 144
+Total time in nanoseconds: 24715
+Total time in seconds: 0
+Total time in minutes: 0
+13 233
+Total time in nanoseconds: 206906
+Total time in seconds: 0
+Total time in minutes: 0
+14 377
+Total time in nanoseconds: 78749
+Total time in seconds: 0
+Total time in minutes: 0
+15 610
+Total time in nanoseconds: 91414
+Total time in seconds: 0
+Total time in minutes: 0
+16 987
+Total time in nanoseconds: 89810
+Total time in seconds: 0
+Total time in minutes: 0
+17 1597
+Total time in nanoseconds: 49684
+Total time in seconds: 0
+Total time in minutes: 0
+18 2584
+Total time in nanoseconds: 221696
+Total time in seconds: 0
+Total time in minutes: 0
+19 4181
+Total time in nanoseconds: 117372
+Total time in seconds: 0
+Total time in minutes: 0
+20 6765
+Total time in nanoseconds: 212075
+Total time in seconds: 0
+Total time in minutes: 0
+21 10946
+Total time in nanoseconds: 150758
+Total time in seconds: 0
+Total time in minutes: 0
+22 17711
+Total time in nanoseconds: 248250
+Total time in seconds: 0
+Total time in minutes: 0
+23 28657
+Total time in nanoseconds: 238035
+Total time in seconds: 0
+Total time in minutes: 0
+24 46368
+Total time in nanoseconds: 367998
+Total time in seconds: 0
+Total time in minutes: 0
+25 75025
+Total time in nanoseconds: 586548
+Total time in seconds: 0
+Total time in minutes: 0
+26 121393
+Total time in nanoseconds: 1151257
+Total time in seconds: 0
+Total time in minutes: 0
+27 196418
+Total time in nanoseconds: 1597067
+Total time in seconds: 0
+Total time in minutes: 0
+28 317811
+Total time in nanoseconds: 3030341
+Total time in seconds: 0
+Total time in minutes: 0
+29 514229
+Total time in nanoseconds: 3918494
+Total time in seconds: 0
+Total time in minutes: 0
+30 832040
+Total time in nanoseconds: 5624036
+Total time in seconds: 0
+Total time in minutes: 0
+31 1346269
+Total time in nanoseconds: 10520899
+Total time in seconds: 0
+Total time in minutes: 0
+32 2178309
+Total time in nanoseconds: 17732547
+Total time in seconds: 0
+Total time in minutes: 0
+33 3524578
+Total time in nanoseconds: 26973445
+Total time in seconds: 0
+Total time in minutes: 0
+34 5702887
+Total time in nanoseconds: 48431434
+Total time in seconds: 0
+Total time in minutes: 0
+35 9227465
+Total time in nanoseconds: 77665441
+Total time in seconds: 0
+Total time in minutes: 0
+36 14930352
+Total time in nanoseconds: 121384416
+Total time in seconds: 0
+Total time in minutes: 0
+37 24157817
+Total time in nanoseconds: 182833289
+Total time in seconds: 0
+Total time in minutes: 0
+38 39088169
+Total time in nanoseconds: 276425259
+Total time in seconds: 0
+Total time in minutes: 0
+39 63245986
+Total time in nanoseconds: 392037300
+Total time in seconds: 0
+Total time in minutes: 0
+40 102334155
+Total time in nanoseconds: 557099453
+Total time in seconds: 0
+Total time in minutes: 0
+41 165580141
+Total time in nanoseconds: 910115385
+Total time in seconds: 0
+Total time in minutes: 0
+42 267914296
+Total time in nanoseconds: 1464040321
+Total time in seconds: 1
+Total time in minutes: 0
+43 433494437
+Total time in nanoseconds: 2845630747
+Total time in seconds: 2
+Total time in minutes: 0
+44 701408733
+Total time in nanoseconds: 4139361328
+Total time in seconds: 4
+Total time in minutes: 0
+45 1134903170
+Total time in nanoseconds: 6486489092
+Total time in seconds: 6
+Total time in minutes: 0
+46 1836311903
+Total time in nanoseconds: 9975727927
+Total time in seconds: 9
+Total time in minutes: 0
+47 2971215073
+Total time in nanoseconds: 15934992915
+Total time in seconds: 15
+Total time in minutes: 0
+48 4807526976
+Total time in nanoseconds: 25864883289
+Total time in seconds: 25
+Total time in minutes: 0
+49 7778742049
+Total time in nanoseconds: 43422239255
+Total time in seconds: 43
+Total time in minutes: 0
+50 12586269025
+Total time in nanoseconds: 70036185974
+Total time in seconds: 70
+Total time in minutes: 1
+51 20365011074
+Total time in nanoseconds: 110162737799
+Total time in seconds: 110
+Total time in minutes: 1
+52 32951280099
+Total time in nanoseconds: 176611531901
+Total time in seconds: 176
+Total time in minutes: 2
+53 53316291173
+Total time in nanoseconds: 287314949993
+Total time in seconds: 287
+Total time in minutes: 4
+54 86267571272
+Total time in nanoseconds: 462059758036
+Total time in seconds: 462
+Total time in minutes: 7
+55 139583862445
+Total time in nanoseconds: 754611996249
+Total time in seconds: 754
+Total time in minutes: 12
+56 225851433717
+Total time in nanoseconds: 1217911907475
+Total time in seconds: 1217
+Total time in minutes: 20
+57 365435296162
+Total time in nanoseconds: 1954617152749
+Total time in seconds: 1954
+Total time in minutes: 32
+58 591286729879
+Total time in nanoseconds: 3175871584336
+Total time in seconds: 3175
+Total time in minutes: 52
+59 956722026041
+Total time in nanoseconds: 5123390534866
+Total time in seconds: 5123
+Total time in minutes: 85
+60 1548008755920
+Total time in nanoseconds: 8308002389518
+Total time in seconds: 8308
+Total time in minutes: 138
+```

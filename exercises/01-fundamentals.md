@@ -358,15 +358,48 @@ public class Fibonacci {
 
 **What is the largest value of `n` for which this program takes less than 1 hour to compute the value of `fibonacci(n)`?**
 
-> 55?
+> 58 (see [results](./code/Exercise_1_1_19.md))
 
 **Develop a better implementation of `fibonacci(n)` that saves computed values in an array.**
 
 > Solution -> [Exercise_1_1_19.java](./code/Exercise_1_1_19.java)
 
+```java
+public static long betterFibonacci(int n, long[] fib) {
+  if (fib[n] == -1)
+    fib[n] = betterFibonacci(n - 1, fib) + betterFibonacci(n - 2, fib);
+
+  return fib[n];
+}
+```
+
 **1.1.20 Write a recursive static method that computes the value of `ln(n!)`.**
 
-> // TODO
+> Solution -> [Exercise_1_1_20.java](./code/Exercise_1_1_20.java)
+
+```java
+public static int factorial(int n) {
+  if (n <= 1)
+    return 1;
+  return n * factorial(n - 1);
+}
+
+// I know this method is not recursive,
+// I might come later to fix it.
+// ln(3!) = ln(3) + ln(2) + ln(1)
+public static int ln(int n) {
+  int nFactorial = factorial(n);
+  int exp = 0;
+  double result = 1.0;
+
+  while (result * Math.E <= nFactorial) {
+    result *= Math.E;
+    exp++;
+  }
+
+  return exp;
+}
+```
 
 **1.1.21 Write a program that reads in lines from standard input with each line containing a name and two integers and then uses `printf()` to print a table with a column of the names, the integers, and the result of dividing the first by the second accurate to three decimal places. You could use a program like this to tabulate batting averages for baseball players or grades for students.**
 

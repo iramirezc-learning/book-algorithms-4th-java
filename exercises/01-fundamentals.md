@@ -403,19 +403,83 @@ public static int ln(int n) {
 
 **1.1.21 Write a program that reads in lines from standard input with each line containing a name and two integers and then uses `printf()` to print a table with a column of the names, the integers, and the result of dividing the first by the second accurate to three decimal places. You could use a program like this to tabulate batting averages for baseball players or grades for students.**
 
-> // TODO
+> Solution -> [Exercise_1_1_21.java](./code/Exercise_1_1_21.java)
+
+```java
+public static void main(String[] args) {
+  while (StdIn.hasNextLine()) {
+    String [] line = StdIn.readLine().split("\\s+");
+    String name = line[0];
+    int n1 = Integer.parseInt(line[1]);
+    int n2 = Integer.parseInt(line[2]);
+    double n3 =  n1 / (double) n2;
+
+    StdOut.printf("%-10s %5d %5d %-5s %3.3f\n", name, n1, n2, "", n3);
+  }
+}
+```
 
 **1.1.22 Write a version of `BinarySearch` that uses the recursive `indexOf` given on page 25 and *traces* the method calls. Each time the recursive method is called, print the argument values `lo` and `hi`, indented by the depth of the recursion. *Hint:* Add an argument to the recursive method that keeps track of the depth.**
 
-> // TODO
+> Solution -> [Exercise_1_1_22.java](./code/Exercise_1_1_22.java)
+
+```java
+public static int indexOf(int[] a, int target, int lo, int hi, int calls) {
+  String format = "%" + calls + "s %d) -> lo: %-3d hi: %-3d\n";
+  StdOut.printf(format, "", calls, lo, hi);
+
+  if (lo > hi)
+    return -1;
+  int mid = lo + (hi - lo) / 2;
+  if (a[mid] > target) {
+    return indexOf(a, target, lo, mid - 1, ++calls);
+  } else if (a[mid] < target) {
+    return indexOf(a, target, mid + 1, hi, ++calls);
+  } else {
+    return mid;
+  }
+}
+```
 
 **1.1.23 Add to the `BinarySearch` test client the ability to respond to a second argument: `+` to print numbers from standard input that *are NOT* in the whitelist, `-` to print numbers that *are* in the whitelist.**
 
-> // TODO
+> Solution -> [Exercise_1_1_23.java](./code/Exercise_1_1_23.java)
+
+```java
+public static void main(String[] args) {
+  In in = new In(args[0]);
+  int[] whilelist = in.readAllInts();
+  String sense = args[1];
+
+  Arrays.sort(whilelist);
+
+  while (!StdIn.isEmpty()) {
+    int key = StdIn.readInt();
+    int index = indexOf(whilelist, key);
+    // not in the whitelist
+    if (sense.equals("+") && index == -1) {
+      StdOut.println(key);
+      // in the whitelist
+    } else if (sense.equals("-") && index != -1) {
+      StdOut.println(key);
+    }
+  }
+}
+```
 
 **1.1.24 Give the sequence of values of `p` and `q` that are computed when Euclid's algorithm is used to compute the greatest common divisor of `105` and `24`.**
 
-> // TODO
+> Solution -> [Exercise_1_1_24.java](./code/Exercise_1_1_24.java)
+
+Sequence:
+
+> `9`
+>
+> `6`
+>
+> `3`
+>
+> `0`
 
 **Extend the code given on page 4 to develop a program `Euclid` that takes two integers from the command line and computes their greatest common divisor, printing out the two arguments for each call on the recursive method. Use your program to compute the greatest common divisor of `1111111` and `1234567`.**
 

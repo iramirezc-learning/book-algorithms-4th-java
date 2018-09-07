@@ -5,10 +5,11 @@ import edu.princeton.cs.algs4.StdOut;
  */
 public class Exercise_1_1_24 {
   public static int gcd(int p, int q) {
+    StdOut.printf("p: %d q: %d\n", p, q);
+
     if (q == 0)
       return p;
     int r = p % q;
-    StdOut.printf("r -> %d\n", r);
     return gcd(q, r);
   }
 

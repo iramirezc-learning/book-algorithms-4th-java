@@ -469,10 +469,6 @@ public static void main(String[] args) {
 
 **1.1.24 Give the sequence of values of `p` and `q` that are computed when Euclid's algorithm is used to compute the greatest common divisor of `105` and `24`.**
 
-> Solution -> [Exercise_1_1_24.java](./code/Exercise_1_1_24.java)
-
-Sequence:
-
 > `9`
 >
 > `6`
@@ -483,7 +479,19 @@ Sequence:
 
 **Extend the code given on page 4 to develop a program `Euclid` that takes two integers from the command line and computes their greatest common divisor, printing out the two arguments for each call on the recursive method. Use your program to compute the greatest common divisor of `1111111` and `1234567`.**
 
-> // TODO
+> Solution -> [Exercise_1_1_24.java](./code/Exercise_1_1_24.java)
+
+```sh
+p: 1111111 q: 1234567
+p: 1234567 q: 1111111
+p: 1111111 q: 123456
+p: 123456 q: 7
+p: 7 q: 4
+p: 4 q: 3
+p: 3 q: 1
+p: 1 q: 0
+gcd(1111111, 1234567) = 1
+```
 
 **1.1.25 Use mathematical induction to prove that Euclid's algorithm computes the greatest common divisor of any pair of nonnegative integers `p` and `q`.**
 

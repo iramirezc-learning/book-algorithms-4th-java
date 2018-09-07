@@ -1,5 +1,8 @@
 import edu.princeton.cs.algs4.StdOut;
 
+/**
+ * Euclidean
+ */
 public class Euclidean {
   public static int gcd(int p, int q) {
     if (q == 0)
@@ -9,12 +12,9 @@ public class Euclidean {
   }
 
   public static void main(String[] args) {
-    int p = 15996751;
-    int q = 3870378;
-    int expected = 4057;
+    int p = Integer.parseInt(args[0]);
+    int q = Integer.parseInt(args[1]);
 
-    int result = gcd(p, q);
-
-    StdOut.printf("gcd(%d, %d) == %d ? %b\n", p, q, expected, expected == result);
+    StdOut.printf("%d\n", gcd(p, q));
   }
 }

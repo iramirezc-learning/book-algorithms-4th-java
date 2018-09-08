@@ -1,5 +1,7 @@
 # Exercises Chapter 1: Fundamentals
 
+[<- index](./index.md)
+
 ## 1.1 Basic Programming Model
 
 ### Exercises

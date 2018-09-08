@@ -1,7 +1,7 @@
 import edu.princeton.cs.algs4.StdOut;
 
 /**
- * Exercise_1_1_9
+ * Exercise_1_1_9. Integer to Binary String
  */
 public class Exercise_1_1_9 {
   public static String toBinaryString(int n) {

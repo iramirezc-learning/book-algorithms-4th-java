@@ -2,7 +2,9 @@
 
 ## 1.1 Basic Programming Model
 
-### 1.1 Exercises
+### Exercises
+
+---
 
 **1.1.1 Give the value of each of the following expressions:**
 
@@ -497,16 +499,106 @@ gcd(1111111, 1234567) = 1
 
 > // TODO
 
-### 1.1 Creative Problems
+### Creative Problems
 
-**1.1.26 Sorting...**
+---
 
-### 1.1 Experiments
+**1.1.26 *Sorting three numbers.* Suppose that the variables `a`, `b`, `c` and `t` are all of the same numeric primitive type. Show that the following code puts `a`, `b` and `c` in ascending order:**
 
-## 1.2 Data Abstraction
+```java
+if (a > b) { t = a; a = b; b = t; }
+if (a > c) { t = a; a = c; c = t; }
+if (b > c) { t = b; b = c; c = t; }
+```
 
-## 1.3 Bags, Queues, and Stack
+> demonstration ->
+>
+> NOTE: not sure if this is the correct way to "show"
 
-## 1.4 Analysis of Algorithms
+```java
+int a = 3;
+int b = 2;
+int c = 1;
+int t;
 
-## 1.5 Case Study: Union-Find
+if (a > b) { t = a; a = b; b = t; }
+//  3 > 2 ?  t = 3; a = 2; b = 3;
+// new values: a = 2, b = 3, c = 1
+if (a > c) { t = a; a = c; c = t; }
+//  2 > 1 ?  t = 2, a = 1, c = 2
+// new values: a = 1, b = 3, c = 2
+if (b > c) { t = b; b = c; c = t; }
+//  3 > 2 ?  t = 3, b = 2, c = 3
+// new values = a = 1, b = 2, c = 3
+```
+
+**1.1.27 *Binomial distribution.* Estimate the number of recursive calls that would be used by the code:**
+
+```java
+public static double binomial(int n, int k, double p) {
+  if ((n == 0) && (k == 0)) return 1.0;
+  if ((n <  0) || (k  < 0)) return 0.0;
+  return (1 - p) * binomial(n - 1, k, p) + p * binomial(n - 1, k - 1, p);
+}
+```
+
+**to compute `binomial(100, 50, 0.25)`.**
+
+> Estimated total calls: // TODO
+
+**Develop a better implementation that is based on saving computed values in an array.**
+
+> // TODO
+
+**1.1.28 *Remove duplicates.* Modify the test client in `BinarySearch` to remove any duplicate keys in the whitelist after the sort.**
+
+> // TODO
+
+**1.1.29 *Equal keys.* Add to `BinarySearch` a static method `rank()` that takes a sorted array of `int` values (some of which may be equal) and a `key` as arguments and returns the number of elements that are smaller than the `key` and a similar method `count()` that returns the number of elements equal to the `key`. *Note*: if `i` and `j` are the values returned by `rank(a, key)` and `count(a, key)` respectively, then `a[i..i+j-1]` are the values in the array that are equal to the `key`.**
+
+```java
+// Not actual solution, just a demonstration.
+
+int a    = [1, 2, 3, 4, 5, 5, 5, 6];
+// indexes [0, 1, 2, 3, 4, 5, 6, 7]
+
+int k = 5; /* key */
+
+int i = BinarySearch.rank(a, k); /* 4 (less than k)*/
+int j = BinarySearch.count(a, k); /* 3 (count of k) */
+
+// a[i..(i+j-1)] are the values in the array equal to k
+// a[4..(4+3-1)]
+// a[4..6]
+// a[4, 5, 6] = [5, 5, 5]
+```
+
+> // TODO
+
+**1.1.30 *Array exercise.* Write a code fragment that creates an `n-by-n` boolean array `a[][]` such that `a[i][j]` is `true` if `i` and `j` are relatively prime (have no common factors), and `false` otherwise.**
+
+> // TODO
+
+**1.1.31 *Random connections.* Write a program that takes as command-line arguments an integer `n` and a double value `p` (between 0 and 1), plots `n` equally spaced dots fo size `0.05` on the circumference of a circle, and then, with probability `p` for each pair of points, draws a gray line connecting them.**
+
+> // TODO
+
+**1.1.32...**
+
+**1.1.33...**
+
+**1.1.34...**
+
+### Experiments
+
+---
+
+**1.1.35 *Dice simulation.***
+
+**1.1.36 *Empirical shuffle check.***
+
+**1.1.37 *Bad shuffling.***
+
+**1.1.38 *Binary search versus brute-force search.***
+
+**1.1.39 *Random matches.***

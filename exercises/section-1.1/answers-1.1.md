@@ -1,6 +1,6 @@
 # Exercises Chapter 1: Fundamentals
 
-[<- index](./index.md)
+[<- index](../index.md)
 
 ## 1.1 Basic Programming Model
 
@@ -42,7 +42,7 @@ d. `1 + 2 + 3`
 
 **1.1.3 Write a program that takes three integer command-line arguments and prints `equal` if all three are equal, and `not equal` otherwise.**
 
-> Solution -> [Exercise_1_1_3.java](./code/Exercise_1_1_3.java)
+> Solution -> [Exercise_1_1_3.java](./Exercise_1_1_3.java)
 
 ```java
 public static void main(String[] args) throws Exception {
@@ -158,7 +158,7 @@ c. `System.out.println((char) ('a' + 4));`
 
 **1.1.9 Write code fragment that puts the binary representation of a positive integer `n` into a String `s`.**
 
-> Solution -> [Exercise_1_1_9.java](./code/Exercise_1_1_9.java)
+> Solution -> [Exercise_1_1_9.java](./Exercise_1_1_9.java)
 
 ```java
 public static String toBinaryString(int n) {
@@ -184,7 +184,7 @@ for (int i = 0; i < 10; i++)
 
 **1.1.11 Write a code fragment that prints the contents of a two-dimensional boolean array, using `*` to represent `true` and a `space` to represent `false`. Include row and column numbers.**
 
-> Solution -> [Exercise_1_1_11.java](./code/Exercise_1_1_11.java)
+> Solution -> [Exercise_1_1_11.java](./Exercise_1_1_11.java)
 
 ```java
 public static String printBoard(boolean[][] board) {
@@ -223,7 +223,7 @@ for (int i = 0; i < 10; i++)
 
 **1.1.13 Write a code fragment to print the *transposition* (rows and columns changed) of a two-dimensional array with *m* rows and *n* columns.**
 
-> Solution -> [Exercise_1_1_13.java](./code/Exercise_1_1_13.java)
+> Solution -> [Exercise_1_1_13.java](./Exercise_1_1_13.java)
 
 ```java
 public static int[][] transpose(int[][] a) {
@@ -243,7 +243,7 @@ public static int[][] transpose(int[][] a) {
 
 **1.1.14 Write a static method `lg()` that takes an `int` value `n` as argument and returns the largest `int` not larger than the base-2 logarithm of `n`. Do NOT use `Math`.**
 
-> Solution -> [Exercise_1_1_14.java](./code/Exercise_1_1_14.java)
+> Solution -> [Exercise_1_1_14.java](./Exercise_1_1_14.java)
 
 ```java
 public static int lg(int n) {
@@ -262,7 +262,7 @@ public static int lg(int n) {
 
 **1.1.15 Write a static method `histogram()` that takes an array `a[]` of `int` values and an integer `m` as arguments and returns and array of length `m` whose `ith` entry is the number of times the integer `i` apperead in the argument array. If the values in `a[]` are all between `0` and `m-1`, the sum of the values in the returned array should be equal to `a.length`.**
 
-> Solution -> [Exercise_1_1_15.java](./code/Exercise_1_1_15.java)
+> Solution -> [Exercise_1_1_15.java](./Exercise_1_1_15.java)
 
 ```java
 public static int[] histogram(int[] a, int m) {
@@ -362,11 +362,11 @@ public class Fibonacci {
 
 **What is the largest value of `n` for which this program takes less than 1 hour to compute the value of `fibonacci(n)`?**
 
-> 58 (see [results](./code/Exercise_1_1_19.md))
+> 58 (see [results](./Exercise_1_1_19.md))
 
 **Develop a better implementation of `fibonacci(n)` that saves computed values in an array.**
 
-> Solution -> [Exercise_1_1_19.java](./code/Exercise_1_1_19.java)
+> Solution -> [Exercise_1_1_19.java](./Exercise_1_1_19.java)
 
 ```java
 public static long betterFibonacci(int n, long[] fib) {
@@ -379,7 +379,7 @@ public static long betterFibonacci(int n, long[] fib) {
 
 **1.1.20 Write a recursive static method that computes the value of `ln(n!)`.**
 
-> Solution -> [Exercise_1_1_20.java](./code/Exercise_1_1_20.java)
+> Solution -> [Exercise_1_1_20.java](./Exercise_1_1_20.java)
 
 ```java
 public static int factorial(int n) {
@@ -407,7 +407,7 @@ public static int ln(int n) {
 
 **1.1.21 Write a program that reads in lines from standard input with each line containing a name and two integers and then uses `printf()` to print a table with a column of the names, the integers, and the result of dividing the first by the second accurate to three decimal places. You could use a program like this to tabulate batting averages for baseball players or grades for students.**
 
-> Solution -> [Exercise_1_1_21.java](./code/Exercise_1_1_21.java)
+> Solution -> [Exercise_1_1_21.java](./Exercise_1_1_21.java)
 
 ```java
 public static void main(String[] args) {
@@ -425,7 +425,7 @@ public static void main(String[] args) {
 
 **1.1.22 Write a version of `BinarySearch` that uses the recursive `indexOf` given on page 25 and *traces* the method calls. Each time the recursive method is called, print the argument values `lo` and `hi`, indented by the depth of the recursion. *Hint:* Add an argument to the recursive method that keeps track of the depth.**
 
-> Solution -> [Exercise_1_1_22.java](./code/Exercise_1_1_22.java)
+> Solution -> [Exercise_1_1_22.java](./Exercise_1_1_22.java)
 
 ```java
 public static int indexOf(int[] a, int target, int lo, int hi, int calls) {
@@ -447,7 +447,7 @@ public static int indexOf(int[] a, int target, int lo, int hi, int calls) {
 
 **1.1.23 Add to the `BinarySearch` test client the ability to respond to a second argument: `+` to print numbers from standard input that *are NOT* in the whitelist, `-` to print numbers that *are* in the whitelist.**
 
-> Solution -> [Exercise_1_1_23.java](./code/Exercise_1_1_23.java)
+> Solution -> [Exercise_1_1_23.java](./Exercise_1_1_23.java)
 
 ```java
 public static void main(String[] args) {
@@ -483,7 +483,7 @@ public static void main(String[] args) {
 
 **Extend the code given on page 4 to develop a program `Euclid` that takes two integers from the command line and computes their greatest common divisor, printing out the two arguments for each call on the recursive method. Use your program to compute the greatest common divisor of `1111111` and `1234567`.**
 
-> Solution -> [Exercise_1_1_24.java](./code/Exercise_1_1_24.java)
+> Solution -> [Exercise_1_1_24.java](./Exercise_1_1_24.java)
 
 ```sh
 p: 1111111 q: 1234567
@@ -554,41 +554,7 @@ public static double binomial(int n, int k, double p) {
 
 **1.1.28 *Remove duplicates.* Modify the test client in `BinarySearch` to remove any duplicate keys in the whitelist after the sort.**
 
-> Solution -> [Exercise_1_1_28.java](./code/Exercise_1_1_28.java)
-
-```java
-public static void main(String[] args) {
-  In in = new In(args[0]);
-  int[] whitelist = in.readAllInts();
-
-  Arrays.sort(whitelist);
-
-  // save indexes of duplicated values
-  ArrayList<Integer> duplicateIndexes = new ArrayList<Integer>();
-
-  for (int i = 0; i < whitelist.length; i++) {
-    if (Arrays.binarySearch(whitelist, whitelist[i]) != i) {
-      duplicateIndexes.add(i);
-    }
-  }
-
-  // copy unique values
-  int[] uniqueWhitelist = new int[whitelist.length - duplicateIndexes.size()];
-  int currentIndex = 0;
-
-  for (int i = 0; i < whitelist.length; i++) {
-    if (duplicateIndexes.indexOf(i) == -1) {
-      uniqueWhitelist[currentIndex++] = whitelist[i];
-    }
-  }
-
-  while (!StdIn.isEmpty()) {
-    int key = StdIn.readInt();
-    if (indexOf(uniqueWhitelist, key) == -1)
-      StdOut.println(key);
-  }
-}
-```
+> Solution -> [Exercise_1_1_28.java](./Exercise_1_1_28.java)
 
 **1.1.29 *Equal keys.* Add to `BinarySearch` a static method `rank()` that takes a sorted array of `int` values (some of which may be equal) and a `key` as arguments and returns the number of elements that are smaller than the `key` and a similar method `count()` that returns the number of elements equal to the `key`. *Note*: if `i` and `j` are the values returned by `rank(a, key)` and `count(a, key)` respectively, then `a[i..i+j-1]` are the values in the array that are equal to the `key`.**
 
@@ -609,7 +575,7 @@ int j = BinarySearch.count(a, k); /* 3 (count of k) */
 // a[4, 5, 6] = [5, 5, 5]
 ```
 
-> // TODO
+> Solution -> [Exercise_1_1_29.java](./Exercise_1_1_29.java)
 
 **1.1.30 *Array exercise.* Write a code fragment that creates an `n-by-n` boolean array `a[][]` such that `a[i][j]` is `true` if `i` and `j` are relatively prime (have no common factors), and `false` otherwise.**
 

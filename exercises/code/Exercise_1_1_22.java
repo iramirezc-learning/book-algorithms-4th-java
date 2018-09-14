@@ -29,13 +29,13 @@ public class Exercise_1_1_22 {
 
   public static void main(String[] args) {
     In in = new In(args[0]);
-    int[] whilelist = in.readAllInts();
+    int[] whitelist = in.readAllInts();
 
-    Arrays.sort(whilelist);
+    Arrays.sort(whitelist);
 
     while (!StdIn.isEmpty()) {
       int key = StdIn.readInt();
-      if (indexOf(whilelist, key) == -1)
+      if (indexOf(whitelist, key) == -1)
         StdOut.println(key);
     }
   }

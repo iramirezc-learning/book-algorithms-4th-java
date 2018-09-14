@@ -452,14 +452,14 @@ public static int indexOf(int[] a, int target, int lo, int hi, int calls) {
 ```java
 public static void main(String[] args) {
   In in = new In(args[0]);
-  int[] whilelist = in.readAllInts();
+  int[] whitelist = in.readAllInts();
   String sense = args[1];
 
-  Arrays.sort(whilelist);
+  Arrays.sort(whitelist);
 
   while (!StdIn.isEmpty()) {
     int key = StdIn.readInt();
-    int index = indexOf(whilelist, key);
+    int index = indexOf(whitelist, key);
     // not in the whitelist
     if (sense.equals("+") && index == -1) {
       StdOut.println(key);

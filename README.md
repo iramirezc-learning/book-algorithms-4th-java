@@ -11,6 +11,27 @@ Code exercises and personal notes from the book [Algorithms (4th edition)](https
 * [Standard Libraries](https://introcs.cs.princeton.edu/java/stdlib/)
 * [Code & Solutions](https://algs4.cs.princeton.edu/code/)
 
+## Algorithms & Data Structures
+
+### 1. Fundamentals
+
+* [Euclidean Algorithm](./algorithms/EuclideanAlgorithm/Euclidean.md)
+* [Binary Search](./algorithms/BinarySearch/BinarySearch.md)
+
+#### 1.1 Basic Programming Model - [exercises](./exercises/section-1.1/answers-1.1.md)
+
+#### 1.2 Data Abstraction - [exercises](./exercises/section-1.2/answers-1.2.md)
+
+### 2. Sorting
+
+### 3. Searching
+
+### 4. Graphs
+
+### 5. Strings
+
+### 6. Context
+
 ## Installation of `algs4.jar`
 
 Follow these instructions ["Installing the textbook libraries"](https://algs4.cs.princeton.edu/code/) to install `algs4.jar`.
@@ -44,25 +65,6 @@ Compile your java class:
 ```sh
 javac BinarySearch.java
 ```
-
-## Algorithms & Data Structures
-
-### 1. Fundamentals
-
-* [Euclidean Algorithm](./algorithms/euclidean/euclidean.md)
-* [Binary Search](./algorithms/binary-search/binary-search.md)
-
-#### 1.1 Basic Programming Model
-
-### 2. Sorting
-
-### 3. Searching
-
-### 4. Graphs
-
-### 5. Strings
-
-### 6. Context
 
 ## Tests (Node.js)
 

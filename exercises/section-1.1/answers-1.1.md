@@ -579,7 +579,7 @@ int j = BinarySearch.count(a, k); /* 3 (count of k) */
 
 **1.1.30 *Array exercise.* Write a code fragment that creates an `n-by-n` boolean array `a[][]` such that `a[i][j]` is `true` if `i` and `j` are relatively prime (have no common factors), and `false` otherwise.**
 
-> // TODO
+> Solution -> [Exercise_1_1_30.java](./Exercise_1_1_30.java)
 
 **1.1.31 *Random connections.* Write a program that takes as command-line arguments an integer `n` and a double value `p` (between 0 and 1), plots `n` equally spaced dots fo size `0.05` on the circumference of a circle, and then, with probability `p` for each pair of points, draws a gray line connecting them.**
 

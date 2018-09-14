@@ -554,7 +554,41 @@ public static double binomial(int n, int k, double p) {
 
 **1.1.28 *Remove duplicates.* Modify the test client in `BinarySearch` to remove any duplicate keys in the whitelist after the sort.**
 
-> // TODO
+> Solution -> [Exercise_1_1_28.java](./code/Exercise_1_1_28.java)
+
+```java
+public static void main(String[] args) {
+  In in = new In(args[0]);
+  int[] whitelist = in.readAllInts();
+
+  Arrays.sort(whitelist);
+
+  // save indexes of duplicated values
+  ArrayList<Integer> duplicateIndexes = new ArrayList<Integer>();
+
+  for (int i = 0; i < whitelist.length; i++) {
+    if (Arrays.binarySearch(whitelist, whitelist[i]) != i) {
+      duplicateIndexes.add(i);
+    }
+  }
+
+  // copy unique values
+  int[] uniqueWhitelist = new int[whitelist.length - duplicateIndexes.size()];
+  int currentIndex = 0;
+
+  for (int i = 0; i < whitelist.length; i++) {
+    if (duplicateIndexes.indexOf(i) == -1) {
+      uniqueWhitelist[currentIndex++] = whitelist[i];
+    }
+  }
+
+  while (!StdIn.isEmpty()) {
+    int key = StdIn.readInt();
+    if (indexOf(uniqueWhitelist, key) == -1)
+      StdOut.println(key);
+  }
+}
+```
 
 **1.1.29 *Equal keys.* Add to `BinarySearch` a static method `rank()` that takes a sorted array of `int` values (some of which may be equal) and a `key` as arguments and returns the number of elements that are smaller than the `key` and a similar method `count()` that returns the number of elements equal to the `key`. *Note*: if `i` and `j` are the values returned by `rank(a, key)` and `count(a, key)` respectively, then `a[i..i+j-1]` are the values in the array that are equal to the `key`.**
 

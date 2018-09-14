@@ -6,6 +6,8 @@ Finds the index of an element in a sorted Array or returns `-1` if not found.
 
 ### Java
 
+> [BinarySearch.java](./BinarySearch.java)
+
 ```java
 public static int indexOf(int[] a, int key) {
   int lo = 0;
@@ -24,16 +26,16 @@ public static int indexOf(int[] a, int key) {
 }
 ```
 
-> [BinarySearch.java](./BinarySearch.java)
-
-Run:
+Usage:
 
 ```sh
-java BinarySearch ./data/tinyW.txt < ./data/tinyT.txt
-java BinarySearch ./data/largeW.txt < ./data/largeT.txt | more
+java BinarySearch ./data/whitelist.txt < ./data/targets.txt
+java BinarySearch ./data/whitelist.txt < ./data/targets.txt | more
 ```
 
 ### JavaScript
+
+> [BinarySearch.js](./BinarySearch.js)
 
 ```js
 function binarySearch(a, target) {
@@ -56,9 +58,7 @@ function binarySearch(a, target) {
 }
 ```
 
-> [binary-search.js](./binary-search.js)
-
 ## More Resources
 
-* [Source Code](https://algs4.cs.princeton.edu/11model/BinarySearch.java.html)
+* [Source Code | Algorithms (4th edition)](https://algs4.cs.princeton.edu/11model/BinarySearch.java.html)
 * [Binary search (article) | Algorithms | Khan Academy](https://www.khanacademy.org/computing/computer-science/algorithms/binary-search/a/binary-search)

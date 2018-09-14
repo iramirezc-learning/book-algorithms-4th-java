@@ -3,7 +3,17 @@ import edu.princeton.cs.algs4.StdOut;
 import java.util.Arrays;
 
 /**
- * Exercise_1_1_15
+ * Compilation: javac Exercise_1_1_15.java
+ * Execution: java Exercise_1_1_15 <size>
+ *
+ * $ java Exercise_1_1_15 5
+ * Array: [3, 3, 4, 0, 1]
+ * Histogram: [1, 1, 0, 2, 1]
+ * a.length : 5, sumHistogram : 5
+ */
+
+/**
+ * Exercise_1_1_15. Histogram.
  */
 public class Exercise_1_1_15 {
   public static int[] createRandomArray(int n) {

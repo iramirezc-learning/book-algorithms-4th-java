@@ -1,7 +1,21 @@
 import edu.princeton.cs.algs4.StdOut;
 
 /**
- * Exercise_1_1_11
+ * Compilation: javac Exercise_1_1_11.java
+ * Execution: java Exercise_1_1_11 <rows> <cols>
+ *
+ * $ java Exercise_1_1_11 5 5
+ *   1  2  3  4  5
+ * 1       *
+ * 2 *  *        *
+ * 3 *
+ * 4    *     *  *
+ * 5
+ */
+
+/**
+ * Exercise_1_1_11. Prints a board with header and row columns. Prints `*` for
+ * true, whitespace for false.
  */
 public class Exercise_1_1_11 {
 

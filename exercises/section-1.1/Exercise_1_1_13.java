@@ -2,7 +2,21 @@ import edu.princeton.cs.algs4.StdOut;
 import edu.princeton.cs.algs4.StdRandom;
 
 /**
- * Exercise_1_1_13
+ * Compilation: javac Exercise_1_1_13.java
+ * Execution: java Exercise_1_1_13 <rows> <cols>
+ *
+ * $ java Exercise_1_1_13 2 3
+ * Original ->
+ *     5    3    4
+ *     5    3    4
+ * Transposed ->
+ *     5    5
+ *     3    3
+ *     4    4
+ */
+
+/**
+ * Exercise_1_1_13. Transposes a bidimensional array.
  */
 public class Exercise_1_1_13 {
   public static int[][] createTable(int rows, int cols) {

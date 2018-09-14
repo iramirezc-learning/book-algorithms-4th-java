@@ -1,7 +1,16 @@
 import edu.princeton.cs.algs4.StdOut;
 
 /**
- * Exercise_1_1_27. Binomial Distribution
+ * Compilation: javac Exercise_1_1_27.java
+ * Execution: java Exercise_1_1_27 <number1> <number2> <double>
+ *
+ * $ java Exercise_1_1_27 2 2 0.5
+ * 0.25
+ * Total calls: 13
+ */
+
+/**
+ * Exercise_1_1_27. Binomial Distribution.
  */
 public class Exercise_1_1_27 {
 

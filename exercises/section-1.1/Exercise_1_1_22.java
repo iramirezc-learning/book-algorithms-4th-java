@@ -4,6 +4,23 @@ import edu.princeton.cs.algs4.StdIn;
 import edu.princeton.cs.algs4.StdOut;
 
 /**
+ * Compilation: javac Exercise_1_1_22.java
+ * Execution: java Exercise_1_1_22 <whitelist_file> < <input_stream>
+ *
+ * $ java Exercise_1_1_22 ./data/whitelist.txt < ./data/targets.txt
+ *  1) -> lo: 0   hi: 17
+ *   2) -> lo: 9   hi: 17
+ *    3) -> lo: 14  hi: 17
+ *     4) -> lo: 14  hi: 14
+ *  1) -> lo: 0   hi: 17
+ *   2) -> lo: 0   hi: 7
+ *    3) -> lo: 4   hi: 7
+ *     4) -> lo: 6   hi: 7
+ *      5) -> lo: 7   hi: 7
+ * ...
+ */
+
+/**
  * Exercise_1_1_22. Binary Search - Recursive Implementation
  */
 public class Exercise_1_1_22 {

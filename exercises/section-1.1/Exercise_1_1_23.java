@@ -7,7 +7,34 @@ import edu.princeton.cs.algs4.StdIn;
 import edu.princeton.cs.algs4.StdOut;
 
 /**
- * Exercise_1_1_23
+ * Compilation: javac Exercise_1_1_23.java
+ * Execution: java Exercise_1_1_23 <whitelist_file> <operator> < <input_stream>
+ *
+ * $ java Exercise_1_1_23 ./data/whitelist.txt + < ./data/targets.txt
+ * 12
+ * 57
+ * 33
+ * 16
+ * 29
+ * 12
+ * 33
+ * 33
+ *
+ * $ java Exercise_1_1_23 ./data/whitelist.txt - < ./data/targets.txt
+ * 84
+ * 48
+ * 68
+ * 10
+ * 18
+ * 98
+ * 23
+ * 54
+ * 77
+ * 11
+ */
+
+/**
+ * Exercise_1_1_23. Binary Search + (not in the whitelist) - (in the whitelist)
  */
 public class Exercise_1_1_23 {
 

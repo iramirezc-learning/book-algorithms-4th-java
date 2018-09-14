@@ -1,7 +1,15 @@
 import edu.princeton.cs.algs4.StdOut;
 
 /**
- * Exercise_1_1_14
+ * Compilation: javac Exercise_1_1_14.java
+ * Execution: java Exercise_1_1_14 <number>
+ *
+ * $ java Exercise_1_1_14 10
+ * 3
+ */
+
+/**
+ * Exercise_1_1_14. Integer logarithm not larget than lg_2(n).
  */
 public class Exercise_1_1_14 {
 

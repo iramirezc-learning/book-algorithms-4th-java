@@ -2,7 +2,20 @@ import edu.princeton.cs.algs4.StdIn;
 import edu.princeton.cs.algs4.StdOut;
 
 /**
- * Exercise_1_1_21
+ * Compilation: javac Exercise_1_1_21.java
+ * Execution: java Exercise_1_1_21 < <input_stream>
+ *
+ * $ java Exercise_1_1_21 < ./data/names.txt
+ * isaac         10    10       1.000
+ * danni          8     4       2.000
+ * peter         10     2       5.000
+ * pablo          7     3       2.333
+ * krystel        9     5       1.800
+ * sue            3     2       1.500
+ */
+
+/**
+ * Exercise_1_1_21. Table of names
  */
 public class Exercise_1_1_21 {
   public static void main(String[] args) {

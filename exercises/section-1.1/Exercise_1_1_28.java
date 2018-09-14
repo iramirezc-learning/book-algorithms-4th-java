@@ -5,7 +5,22 @@ import edu.princeton.cs.algs4.StdIn;
 import edu.princeton.cs.algs4.StdOut;
 
 /**
- * BinarySearch
+ * Compilation: javac Exercise_1_1_28.java
+ * Execution: java Exercise_1_1_28 <whitelist_file> < <input_stream>
+ *
+ * $ java Exercise_1_1_28 ./data/whitelist.txt < ./data/targets.txt
+ * 12
+ * 57
+ * 33
+ * 16
+ * 29
+ * 12
+ * 33
+ * 33
+ */
+
+/**
+ * Exercise_1_1_28. BinarySearch - Remove duplicates.
  */
 public class Exercise_1_1_28 {
   public static int indexOf(int[] a, int key) {

@@ -1,6 +1,14 @@
 import edu.princeton.cs.algs4.StdOut;
 
 /**
+ * Compilation: javac Exercise_1_1_9.java
+ * Execution: java Exercise_1_1_9 <number1>
+ *
+ * $ java Exercise_1_1_9 15
+ * 15 -> 1111
+ */
+
+/**
  * Exercise_1_1_9. Integer to Binary String
  */
 public class Exercise_1_1_9 {

@@ -1,7 +1,19 @@
 import edu.princeton.cs.algs4.StdOut;
 
 /**
- * Euclidean
+ * Compilation: javac Exercise_1_1_24.java
+ * Execution: java Exercise_1_1_24 <number1> <number2>
+ *
+ * $ java Exercise_1_1_24 12 16
+ * p: 12 q: 16
+ * p: 16 q: 12
+ * p: 12 q: 4
+ * p: 4 q: 0
+ * gcd(12, 16) = 4
+ */
+
+/**
+ * Exercise_1_1_24. Euclidean with printed recursive calls.
  */
 public class Exercise_1_1_24 {
   public static int gcd(int p, int q) {

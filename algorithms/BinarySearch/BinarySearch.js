@@ -1,3 +1,8 @@
+/**
+ * Returns the index of the `target` in the array `a`
+ * @param {array} a the sorted array
+ * @param {*} target the value to search in the array
+ */
 function binarySearch(a, target) {
   var lo = 0;
   var hi = a.length - 1;

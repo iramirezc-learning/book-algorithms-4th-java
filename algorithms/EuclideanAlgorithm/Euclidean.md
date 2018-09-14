@@ -6,6 +6,8 @@ Finds the Greatest Common Divisor of two numbers.
 
 ### Java
 
+> [Euclidean.java](./Euclidean.java)
+
 ```java
 public static int gcd(int p, int q) {
   if (q == 0)
@@ -15,9 +17,9 @@ public static int gcd(int p, int q) {
 }
 ```
 
-> [Euclidean.java](./Euclidean.js)
-
 ### JavaScript
+
+> [Euclidean.js](./Euclidean.js)
 
 ```js
 function gcd(p, q) {
@@ -26,8 +28,6 @@ function gcd(p, q) {
   return gcd(q, r);
 }
 ```
-
-> [euclidean.js](./euclidean.js)
 
 ## More Resources
 

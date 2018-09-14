@@ -1,6 +1,14 @@
 import edu.princeton.cs.algs4.StdOut;
 
 /**
+ * Compilation: javac Euclidean.java
+ * Execution: java Euclidean <number1> <number2>
+ *
+ * $ java Euclidean 12 16
+ * 4
+ */
+
+/**
  * Euclidean
  */
 public class Euclidean {

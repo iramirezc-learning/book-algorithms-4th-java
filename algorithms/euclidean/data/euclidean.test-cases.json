@@ -1,7 +1,0 @@
-[
-  { "input": [3, 0], "expected": 3 },
-  { "input": [0, 5], "expected": 5 },
-  { "input": [54, 24], "expected": 6 },
-  { "input": [180, 48], "expected": 12 },
-  { "input": [15996751, 3870378], "expected": 4057 }
-]

@@ -1,7 +1,13 @@
 const assert = require('assert');
+const euclidean = require('./Euclidean');
 
-const euclidean = require('./euclidean');
-const testCases = require('./data/euclidean.test-cases.json');
+const testCases = [
+  { "input": [3, 0], "expected": 3 },
+  { "input": [0, 5], "expected": 5 },
+  { "input": [54, 24], "expected": 6 },
+  { "input": [180, 48], "expected": 12 },
+  { "input": [15996751, 3870378], "expected": 4057 }
+];
 
 describe('Algorithm - Euclidean [Greatest Common Divisor]', function () {
   describe('Test cases', function () {

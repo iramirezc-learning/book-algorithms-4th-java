@@ -4,7 +4,17 @@ import edu.princeton.cs.algs4.StdIn;
 import edu.princeton.cs.algs4.StdOut;
 
 /**
- * InnerBinarySearch
+ * Compilation: javac BinarySearch.java
+ * Execution: java BinarySearch <whitelist_file> < <input_file> | more
+ *
+ * $ java BinarySearch ./data/whitelist.txt < ./data/targets.txt
+ * 50
+ * 99
+ * 13
+ */
+
+/**
+ * BinarySearch
  */
 public class BinarySearch {
   public static int indexOf(int[] a, int key) {

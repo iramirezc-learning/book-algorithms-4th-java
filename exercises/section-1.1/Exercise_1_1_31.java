@@ -51,13 +51,15 @@ public class Exercise_1_1_31 {
 
     // set the pen color to Gray and pen radius to 0.25
     StdDraw.setPenColor(StdDraw.GRAY);
-    StdDraw.setPenRadius(0.025);
+    StdDraw.setPenRadius(0.0125);
 
     // draw a line connecting each pair of points with probability `p`
     // from aistrate's code
     for (int i = 0; i < n - 1; i++) {
-      if (StdRandom.bernoulli(p)) {
-        StdDraw.line(pointsX[i], pointsY[i], pointsX[i + 1], pointsY[i + 1]);
+      for (int j = i + 1; j < n; j++) {
+        if (StdRandom.bernoulli(p)) {
+          StdDraw.line(pointsX[i], pointsY[i], pointsX[j], pointsY[j]);
+        }
       }
     }
   }

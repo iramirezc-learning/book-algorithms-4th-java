@@ -585,11 +585,42 @@ int j = BinarySearch.count(a, k); /* 3 (count of k) */
 
 > Solution -> [Exercise_1_1_31.java](./Exercise_1_1_31.java)
 
-**1.1.32...**
+**1.1.32 *Histogram.* Suppose that the standard input stream is a sequence of `double` values. Write a program that takes an integer `n` and two `double` values `lo` and `hi` from the command line and uses `StdDraw` to plot a histogram from the count of the numbers in the standard input stream that fall in each of the `n` intervals defined by dividing `(lo, hi)` into `n` equal-sized intervals.**
 
-**1.1.33...**
+> // TODO
 
-**1.1.34...**
+**1.1.33 *Matrix library.* Write a library `Matrix` that implements the following API:**
+
+```java
+public class Matrix {
+  static double dot(double[] x, double[] y); // vector dot product
+  static double[][] mult(double[][] a, double[][] b); // matrix-matrix product
+  static double[][] transpose(double[][] a); // transpose
+  static double[] mult(double[][] a, double[] x); // matrix-vector product
+  static double[] mult(double[] y, double[][] a); // vector-vector product
+}
+```
+
+> // TODO
+
+**1.1.34 *Filtering.* Which of the following `require` saving all the values from standard input (in an array, say), and which could be implemented as a filter using only a fixed number of variables and arrays of fixed size (not dependent on `n`)? For each, the input comes from standard input and consists of `n` real numbers between `0` and `1`.**
+
+- Print the maximum and minimum numbers.
+> can be implemented as a filter. By having `max` and `min` variables and updating those when reading the values.
+- Print the median of the numbers.
+> requires saving all the values. We need to store all numbers from standard input and sort them, then we can select the median.
+- Print the `k`th smallest value, for `k` less than `100`.
+> can be implemented as filter. By having `min` and `minCount` variables.
+- Print the sum of the squares of the numbers.
+> can be implemented as a filter. By having only a `sum` variable to store the square of each number + `sum`.
+- Print the average of the `n` numbers.
+> can be implemented as a filter. By having `sum` and `count` variables.
+- Print the percentage of numbers greater than the average.
+> requires saving all the values. We need to store all numbers to get the average and then count all the numbers greater tha it.
+- Print the `n` numbers in increasing order.
+> requires saving all the values. We need to store all numbers and then sort them in increasing order.
+- Print the `n` numbers in random order.
+> requires saving all the values. We need to store all numbers and then print them in random order.
 
 ### Experiments
 

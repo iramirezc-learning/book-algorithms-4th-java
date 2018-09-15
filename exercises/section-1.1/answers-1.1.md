@@ -10,6 +10,10 @@
 
 **1.1.1 Give the value of each of the following expressions:**
 
+> Solution -> [Exercise_1_1_1.java](./Exercise_1_1_1.java)
+>
+> Note: You should figure it out by yourself before running the code.
+
 a. `(0 + 15) / 2`
 
 > 7
@@ -23,6 +27,10 @@ c. `true && false || true && true`
 > true
 
 **1.1.2 Give the type and value of each of the following expressions:**
+
+> Solution -> [Exercise_1_1_2.java](./Exercise_1_1_2.java)
+>
+> Note: You should figure it out by yourself before running the code.
 
 a. `(1 + 2.236)/2`
 

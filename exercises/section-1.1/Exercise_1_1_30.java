@@ -27,6 +27,10 @@ import edu.princeton.cs.algs4.StdOut;
  * // * *** * *** * *** * *** * *** * *** * ***
  * // *                  *                  *
  * // * * *** * * * *** * * * *** * * * *** * *
+ * 
+ * Reference:
+ * - http://mathworld.wolfram.com/RelativelyPrime.html
+ * - https://www.mathsisfun.com/definitions/relatively-prime.html
  */
 
 /**

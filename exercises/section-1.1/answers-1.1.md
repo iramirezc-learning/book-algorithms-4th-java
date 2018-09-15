@@ -626,12 +626,36 @@ public class Matrix {
 
 ---
 
-**1.1.35 *Dice simulation.***
+**1.1.35 *Dice simulation.* The following code computes the exact probability distribution for the sum of two dice:**
 
-**1.1.36 *Empirical shuffle check.***
+```java
+int SIDES = 6;
+int [] frequencies = new int[2 * SIDES + 1];
+for (int i = 1; i <= SIDES; i++)
+  for (int j = 1; j <= SIDES; j++)
+    frequencies[i + j]++;
 
-**1.1.37 *Bad shuffling.***
+double[] probabilities = new double[2 * SIDES + 1];
+for (int k = 2; k <= 2 * SIDES; k++)
+  probabilities[k] = frequencies[k]/36.0;
+```
 
-**1.1.38 *Binary search versus brute-force search.***
+The value `probabilites[k]` is the probability that the dice sum to `k`. Run experiments to validate this calculation simulating `n` dice throws, keeping track of the frequencies of occurence of each value when you compute the sum of two random integers between `1` and `6`. How large does `n` have to be before your empirical results match the exact results to three decimal places?
 
-**1.1.39 *Random matches.***
+> // TODO
+
+**1.1.36 *Empirical shuffle check.* Run computational experiments to check that our shuffling code on page 32 works as advertised. Write a program `ShuffleTest` that takes command-line arguments `m` and `n`, does `n` shuffles of an array of length `m` that is initialized with `a[i] = i` before each suffle, and prints an *m*-by-*m* table such that row `i` gives the number of times `i` wound up in position `j` for all `j`. All entries in the table should be close to `n/m`.**
+
+> // TODO
+
+**1.1.37 *Bad shuffling.* Suppose that you choose a random integer between `0` and `n-1` in our shuffling code instead of one between `i` and `n-1`. Show that the resulting order is *not* equally likely to be on of the `n!` possibilities. Run the test of the previous exercise for this version.**
+
+> // TODO
+
+**1.1.38 *Binary search versus brute-force search.* Write a program `BruteForceSearch` that uses the brute-force search method given on page 48 and compare its running time on your computer with that of `BinarySearch` for `largeW.txt` and `largeT.txt`.**
+
+> // TODO
+
+**1.1.39 *Random matches.* Write a `BinarySearch` client that takes an `int` value `trials` as command-line argument and runs the specified number of `trials` of the following experiment for `n = 10^3`, `10^4`, `10^5` and `10^6`: generate two arrays of `n` randomly generated positive six-digit `int` values, and find the number of values that appear in both arrays. For each value of `n`, print a table giving the average value of this quantity over all trials.**
+
+> // TODO

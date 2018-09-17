@@ -33,6 +33,21 @@ public class BinarySearch {
     return -1;
   }
 
+  /**
+   * Recursive implementation of BinarySearch
+   */
+  public static int indexOf(int[] a, int key, int lo, int hi) {
+    if (lo > hi)
+      return -1;
+    int mid = lo + (hi - lo) / 2;
+    if (key < a[mid])
+      return indexOf(a, key, lo, mid - 1);
+    if (key > a[mid])
+      return indexOf(a, key, mid + 1, hi);
+    else
+      return mid;
+  }
+
   public static void main(String[] args) {
     In in = new In(args[0]);
     int[] whitelist = in.readAllInts();
@@ -41,7 +56,8 @@ public class BinarySearch {
 
     while (!StdIn.isEmpty()) {
       int key = StdIn.readInt();
-      if (indexOf(whitelist, key) == -1)
+      // recursive implementation
+      if (indexOf(whitelist, key, 0, whitelist.length - 1) == -1)
         StdOut.println(key);
     }
   }

@@ -46,6 +46,8 @@ StdOut.println(s);
 ```
 
 > Hello World
+>
+> Solution -> [Exercise_1_2_5.java](./Exercise_1_2_5.java)
 
 **1.2.6 A string `s` is a _circular shift_ (or circular rotation) of a string `t` if it matches shwn the characters are circulary shifted by any number of positions; e.g., `ACTGACG` is a circular shift of `TGACCGAC`, and vice versa. Detecting this condition is important in the study of gneomic sequences. Write a program that checks whether two given strings `s` and `t` are circular shifts of one another. _Hint:_ The solutions is a one-liner with `indexOf()`, `length()` and string concatenation.**
 

@@ -8,7 +8,7 @@ import edu.princeton.cs.algs4.StdOut;
  * Compilation: javac Exercise_1_1_28.java
  * Execution: java Exercise_1_1_28 <whitelist_file> < <input_stream>
  *
- * $ java Exercise_1_1_28 ./data/whitelist.txt < ./data/targets.txt
+ * $ java Exercise_1_1_28 ../../data/whitelist.txt < ../../data/targets.txt
  * 12
  * 57
  * 33

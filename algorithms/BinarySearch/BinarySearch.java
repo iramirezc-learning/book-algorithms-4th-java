@@ -7,7 +7,7 @@ import edu.princeton.cs.algs4.StdOut;
  * Compilation: javac BinarySearch.java
  * Execution: java BinarySearch <whitelist_file> < <input_file> | more
  *
- * $ java BinarySearch ../../data/whitelist.txt < ../../data/targets.txt
+ * $ java BinarySearch ../../data/tinyW.txt < ../../data/tinyT.txt
  * 50
  * 99
  * 13

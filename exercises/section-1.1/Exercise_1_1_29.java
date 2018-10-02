@@ -6,13 +6,13 @@ import edu.princeton.cs.algs4.StdOut;
  * Compilation: javac Exercise_1_1_29.java
  * Execution: java Exercise_1_1_29 <input_file> <key>
  *
- * $ java Exercise_1_1_29 ./data/sorted.txt 5
+ * $ java Exercise_1_1_29 ../../data/sorted.txt 5
  * Original array: [1, 2, 3, 4, 5, 5, 5, 6]
  * rank: 4
  * count: 3
  * 5 5 5
  *
- * $ java Exercise_1_1_29 ./data/repeated.txt 5
+ * $ java Exercise_1_1_29 ../../data/repeated.txt 5
  * Original array: [5, 5, 5, 5, 5, 5, 5, 5, 5, 5]
  * rank: 0
  * count: 10

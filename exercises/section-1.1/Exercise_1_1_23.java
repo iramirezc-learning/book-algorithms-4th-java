@@ -10,7 +10,7 @@ import edu.princeton.cs.algs4.StdOut;
  * Compilation: javac Exercise_1_1_23.java
  * Execution: java Exercise_1_1_23 <whitelist_file> <operator> < <input_stream>
  *
- * $ java Exercise_1_1_23 ./data/whitelist.txt + < ./data/targets.txt
+ * $ java Exercise_1_1_23 ../../data/whitelist.txt + < ../../data/targets.txt
  * 12
  * 57
  * 33
@@ -20,7 +20,7 @@ import edu.princeton.cs.algs4.StdOut;
  * 33
  * 33
  *
- * $ java Exercise_1_1_23 ./data/whitelist.txt - < ./data/targets.txt
+ * $ java Exercise_1_1_23 ../../data/whitelist.txt - < ../../data/targets.txt
  * 84
  * 48
  * 68

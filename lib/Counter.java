@@ -2,6 +2,9 @@ import edu.princeton.cs.algs4.StdOut;
 import edu.princeton.cs.algs4.StdRandom;
 
 /**
+ * Type: ADT
+ * Description: An abstract data type for a simple counter.
+ * Ref: p. 84
  * Compilation: javac Counter.java
  * Execution: java Counter <trials>
  *
@@ -35,6 +38,7 @@ public class Counter {
   }
 
   public static void main(String[] args) {
+    // Ref: Flips p. 89
     int trials = Integer.parseInt(args[0]);
     Counter heads = new Counter("heads");
     Counter tails = new Counter("tails");
@@ -49,6 +53,7 @@ public class Counter {
 
     StdOut.println(heads);
     StdOut.println(tails);
+
     int delta = heads.tally() - tails.tally();
     StdOut.println("delta: " + Math.abs(delta));
   }

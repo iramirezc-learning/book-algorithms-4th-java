@@ -2,11 +2,14 @@ import edu.princeton.cs.algs4.In;
 import edu.princeton.cs.algs4.Out;
 
 /**
+ * Type: Snippet
+ * Description: Concatenates multiple files into one.
+ * Ref: p. 82
  * Compilation: javac Cat.java
  * Execution: java Cat <input_file_1> <input_file_2> <output_file>
  *
- * $ java Cat ../data/in1.txt ../data/in2.txt ../data/out.txt
- * more out.txt
+ * $ java Cat ../data/in1.txt ../data/in2.txt ../out/out.txt
+ * $ more ../out/out.txt
  * This is
  * a tiny
  * test.
@@ -16,7 +19,6 @@ import edu.princeton.cs.algs4.Out;
  * Cat
  */
 public class Cat {
-
   public static void main(String[] args) {
     // copy input files to out (last argument)
     Out out = new Out(args[args.length - 1]);

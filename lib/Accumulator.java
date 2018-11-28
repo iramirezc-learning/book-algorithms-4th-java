@@ -2,6 +2,9 @@ import edu.princeton.cs.algs4.StdOut;
 import edu.princeton.cs.algs4.StdRandom;
 
 /**
+ * Type: ADT
+ * Description: An abstract data type for accumulation data values.
+ * Ref: p. 93
  * Compilation: javac Accumulator.java
  * Execution: java Accumulator <trials>
  *
@@ -31,6 +34,7 @@ public class Accumulator {
   }
 
   public static void main(String[] args) {
+    // Ref: TestAccumulator p. 93
     int trials = Integer.parseInt(args[0]);
     Accumulator a = new Accumulator();
 

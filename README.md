@@ -15,8 +15,8 @@ Code exercises and personal notes from the book [Algorithms (4th edition)](https
 
 ### 1. Fundamentals
 
-* [Euclidean Algorithm](./algorithms/EuclideanAlgorithm/Euclidean.md)
-* [Binary Search](./algorithms/BinarySearch/BinarySearch.md)
+* [Euclidean Algorithm](./js/Euclidean.md)
+* [Binary Search](./js/BinarySearch.md)
 
 #### 1.1 Basic Programming Model - [exercises](./exercises/section-1.1/answers-1.1.md)
 

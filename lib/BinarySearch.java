@@ -4,10 +4,13 @@ import edu.princeton.cs.algs4.StdIn;
 import edu.princeton.cs.algs4.StdOut;
 
 /**
+ * Type: Algorithm
+ * Description: Returns the index of the 'key' in the array 'a'.
+ * Ref: Recursive p. 25, p. 47
  * Compilation: javac BinarySearch.java
  * Execution: java BinarySearch <whitelist_file> < <input_file> | more
  *
- * $ java BinarySearch ../../data/tinyW.txt < ../../data/tinyT.txt
+ * $ java BinarySearch ../data/tinyW.txt < ../data/tinyT.txt | more
  * 50
  * 99
  * 13

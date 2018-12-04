@@ -1,4 +1,5 @@
 {
   "editor.formatOnSave": true,
-  "javascript.format.insertSpaceBeforeFunctionParenthesis": true
+  "javascript.format.insertSpaceBeforeFunctionParenthesis": true,
+  "java.format.comments.enabled": false
 }

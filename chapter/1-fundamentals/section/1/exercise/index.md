@@ -736,4 +736,13 @@ Not found: 367966
 
 #### 1.1.39 *Random matches.* Write a `BinarySearch` client that takes an `int` value `trials` as command-line argument and runs the specified number of `trials` of the following experiment for `n = 10^3`, `10^4`, `10^5` and `10^6`: generate two arrays of `n` randomly generated positive six-digit `int` values, and find the number of values that appear in both arrays. For each value of `n`, print a table giving the average value of this quantity over all trials.
 
-> TODO
+```sh
+$ java E1139 100
+Trials: 100
+n:      1000 Total findings:       104 Average:         1
+n:     10000 Total findings:     10978 Average:       109
+n:    100000 Total findings:   1051252 Average:     10512
+n:   1000000 Total findings:  67072495 Average:    670724
+```
+
+[**Code ->** E1139.java](./E1139.java)

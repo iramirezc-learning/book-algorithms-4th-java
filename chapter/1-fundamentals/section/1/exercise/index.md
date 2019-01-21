@@ -713,8 +713,6 @@ The value `probabilites[k]` is the probability that the dice sum to `k`. Run exp
 
 ##### 1.1.36 *Empirical shuffle check.* Run computational experiments to check that our shuffling code on page 32 works as advertised. Write a program `ShuffleTest` that takes command-line arguments `m` and `n`, does `n` shuffles of an array of length `m` that is initialized with `a[i] = i` before each shuffle, and prints an *m*-by-*m* table such that row `i` gives the number of times `i` wound up in position `j` for all `j`. All entries in the table should be close to `n/m`.
 
-> TODO
-
 [**Code ->** E1136.java](./E1136.java)
 
 #### 1.1.37 *Bad shuffling.* Suppose that you choose a random integer between `0` and `n-1` in our shuffling code instead of one between `i` and `n-1`. Show that the resulting order is *not* equally likely to be on of the `n!` possibilities. Run the test of the previous exercise for this version.

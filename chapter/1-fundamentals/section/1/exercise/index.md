@@ -717,7 +717,7 @@ The value `probabilites[k]` is the probability that the dice sum to `k`. Run exp
 
 #### 1.1.37 *Bad shuffling.* Suppose that you choose a random integer between `0` and `n-1` in our shuffling code instead of one between `i` and `n-1`. Show that the resulting order is *not* equally likely to be on of the `n!` possibilities. Run the test of the previous exercise for this version.
 
-> TODO
+[**Code ->** E1137.java](./E1137.java)
 
 #### 1.1.38 *Binary search versus brute-force search.* Write a program `BruteForceSearch` that uses the brute-force search method given on page 48 and compare its running time on your computer with that of `BinarySearch` for `largeW.txt` and `largeT.txt`.
 

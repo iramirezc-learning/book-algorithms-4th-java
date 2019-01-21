@@ -655,7 +655,7 @@ public class Matrix {
 
 [**Code ->** E1133.java](./E1133.java)
 
-#### 1.1.34 *Filtering.* Which of the following `require` saving all the values from standard input (in an array, say), and which could be implemented as a filter using only a fixed number of variables and arrays of fixed size (not dependent on `n`)? For each, the input comes from standard input and consists of `n` real numbers between `0` and `1`.
+#### 1.1.34 *Filtering.* Which of the following *require* saving all the values from standard input (in an array, say), and which could be implemented as a filter using only a fixed number of variables and arrays of fixed size (not dependent on `n`)? For each, the input comes from standard input and consists of `n` real numbers between `0` and `1`.
 
 ##### Print the maximum and minimum numbers.
 
@@ -679,7 +679,7 @@ public class Matrix {
 
 ##### Print the percentage of numbers greater than the average.
 
-> requires saving all the values. We need to store all numbers to get the average and then count all the numbers greater tha it.
+> requires saving all the values. We need to store all numbers to get the average and then count all the numbers greater than it.
 
 ##### Print the `n` numbers in increasing order.
 
@@ -705,9 +705,9 @@ for (int k = 2; k <= 2 * SIDES; k++)
   probabilities[k] = frequencies[k]/36.0;
 ```
 
-The value `probabilites[k]` is the probability that the dice sum to `k`. Run experiments to validate this calculation simulating `n` dice throws, keeping track of the frequencies of occurence of each value when you compute the sum of two random integers between `1` and `6`. How large does `n` have to be before your empirical results match the exact results to three decimal places?
+The value `probabilites[k]` is the probability that the dice sum to `k`. Run experiments to validate this calculation simulating `n` dice throws, keeping track of the frequencies of occurrence of each value when you compute the sum of two random integers between `1` and `6`. How large does `n` have to be before your empirical results match the exact results to three decimal places?
 
-> TODO
+> MinThrows: 35 (after running 999999 simulations!)
 
 [**Code ->** E1135.java](./E1135.java)
 

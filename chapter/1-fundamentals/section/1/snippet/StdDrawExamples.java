@@ -22,8 +22,11 @@ public class StdDrawExamples {
     StdDraw.setYscale(0, n * n);
     StdDraw.setPenRadius(0.01);
     for (int i = 1; i <= n; i++) {
+      StdDraw.setPenColor(StdDraw.BLUE);
       StdDraw.point(i, i);
+      StdDraw.setPenColor(StdDraw.RED);
       StdDraw.point(i, i * i);
+      StdDraw.setPenColor(StdDraw.GREEN);
       StdDraw.point(i, i * Math.log(i));
     }
   }
@@ -40,7 +43,11 @@ public class StdDrawExamples {
     }
   }
 
-  public static void main(String[] args) {
+  public static void main(String[] args) throws Exception {
+    if (args.length != 2) {
+      throw new Error("You must provide: <1-3> <int_n>");
+    }
+
     int o = new Integer(args[0]);
     int n = new Integer(args[1]);
 

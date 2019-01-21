@@ -1,5 +1,9 @@
 {
   "editor.formatOnSave": true,
   "javascript.format.insertSpaceBeforeFunctionParenthesis": true,
-  "java.format.comments.enabled": false
+  "java.format.comments.enabled": false,
+  "markdownlint.config": {
+    "MD013": false,
+    "MD026": false
+  }
 }

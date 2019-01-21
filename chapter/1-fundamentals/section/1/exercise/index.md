@@ -721,7 +721,18 @@ The value `probabilites[k]` is the probability that the dice sum to `k`. Run exp
 
 #### 1.1.38 *Binary search versus brute-force search.* Write a program `BruteForceSearch` that uses the brute-force search method given on page 48 and compare its running time on your computer with that of `BinarySearch` for `largeW.txt` and `largeT.txt`.
 
-> TODO
+```sh
+$ java E1138 ./data/largeW.txt ./data/largeT.txt
+BruteForceSearch Total Time:
+ 1124417.406646(ms)
+Not found: 367966
+
+BinarySearch Total Time:
+ 2619.593394(ms)
+Not found: 367966
+```
+
+[**Code ->** E1138.java](./E1138.java)
 
 #### 1.1.39 *Random matches.* Write a `BinarySearch` client that takes an `int` value `trials` as command-line argument and runs the specified number of `trials` of the following experiment for `n = 10^3`, `10^4`, `10^5` and `10^6`: generate two arrays of `n` randomly generated positive six-digit `int` values, and find the number of values that appear in both arrays. For each value of `n`, print a table giving the average value of this quantity over all trials.
 

@@ -637,7 +637,7 @@ int j = BinarySearch.count(a, k); /* 3 (count of k) */
 
 #### 1.1.32 *Histogram.* Suppose that the standard input stream is a sequence of `double` values. Write a program that takes an integer `n` and two `double` values `lo` and `hi` from the command line and uses `StdDraw` to plot a histogram from the count of the numbers in the standard input stream that fall in each of the `n` intervals defined by dividing `(lo, hi)` into `n` equal-sized intervals.
 
-> TODO
+[**Code ->** E1132.java](./E1132.java)
 
 #### 1.1.33 *Matrix library.* Write a library `Matrix` that implements the following API:
 
@@ -653,7 +653,7 @@ public class Matrix {
 
 ##### Develop a test client that reads values from standard input and test all the methods.
 
-> TODO
+[**Code ->** E1133.java](./E1133.java)
 
 #### 1.1.34 *Filtering.* Which of the following `require` saving all the values from standard input (in an array, say), and which could be implemented as a filter using only a fixed number of variables and arrays of fixed size (not dependent on `n`)? For each, the input comes from standard input and consists of `n` real numbers between `0` and `1`.
 

@@ -5,7 +5,7 @@ import edu.princeton.cs.algs4.StdRandom;
  * Compilation: javac RandomDoubles.java
  * Execution: java RandomDoubles <output_file> <max_numbers>
  *
- * $ java RandomDoubles ./data/doubles.txt 1000
+ * $ java RandomDoubles ~/algs4-data/custom/doubles.txt 1000
  */
 
 /**

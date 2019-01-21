@@ -10,27 +10,27 @@ import edu.princeton.cs.algs4.StdOut;
  * Compilation: javac E1123.java
  * Execution: java E1123 <whitelist_file> <operator> < <input_stream>
  *
- * $ java E1123 ./data/whitelist.txt + < ./data/targets.txt
- * 12
- * 57
- * 33
- * 16
- * 29
- * 12
- * 33
- * 33
+ * $ java E1123 ~/algs4-data/tinyW.txt + < ~/algs4-data/tinyT.txt
+ * 50
+ * 99
+ * 13
  *
- * $ java E1123 ./data/whitelist.txt - < ./data/targets.txt
- * 84
- * 48
- * 68
+ * $ java E1123 ~/algs4-data/tinyW.txt - < ~/algs4-data/tinyT.txt
+ * 23
  * 10
  * 18
- * 98
  * 23
- * 54
- * 77
+ * 98
+ * 84
  * 11
+ * 10
+ * 48
+ * 77
+ * 54
+ * 98
+ * 77
+ * 77
+ * 68
  */
 
 /**

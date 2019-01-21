@@ -7,16 +7,15 @@ import edu.princeton.cs.algs4.StdOut;
  * Compilation: javac E1122.java
  * Execution: java E1122 <whitelist_file> < <input_stream>
  *
- * $ java E1122 ./data/whitelist.txt < ./data/targets.txt
- *  1) -> lo: 0   hi: 17
- *   2) -> lo: 9   hi: 17
- *    3) -> lo: 14  hi: 17
- *     4) -> lo: 14  hi: 14
- *  1) -> lo: 0   hi: 17
- *   2) -> lo: 0   hi: 7
- *    3) -> lo: 4   hi: 7
- *     4) -> lo: 6   hi: 7
- *      5) -> lo: 7   hi: 7
+ * $ java E1122 ~/algs4-data/tinyW.txt < ~/algs4-data/tinyT.txt
+ *   1) -> lo: 0   hi: 14
+ *   2) -> lo: 0   hi: 6
+ *    3) -> lo: 4   hi: 6
+ *  1) -> lo: 0   hi: 14
+ *   2) -> lo: 8   hi: 14
+ *    3) -> lo: 8   hi: 10
+ *     4) -> lo: 8   hi: 8
+ *      5) -> lo: 9   hi: 8
  * ...
  */
 

@@ -8,7 +8,7 @@ import edu.princeton.cs.algs4.Out;
  * Compilation: javac Cat.java
  * Execution: java Cat <input_file_1> <input_file_2> <output_file>
  *
- * $ java Cat ../data/in1.txt ../data/in2.txt ../out/out.txt
+ * $ java Cat ~/algs4-data/in1.txt ~/algs4-data/in2.txt ~/algs4-data/out/out.txt
  * $ more ../out/out.txt
  * This is
  * a tiny

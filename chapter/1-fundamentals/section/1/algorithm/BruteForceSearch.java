@@ -9,7 +9,7 @@ import edu.princeton.cs.algs4.StdOut;
  * Compilation: javac BruteForceSearch.java
  * Execution: java BruteForceSearch <whitelist_file> < <input_file> | more
  *
- * $ java BruteForceSearch ./data/tinyW.txt < ./data/tinyT.txt | more
+ * $ java BruteForceSearch ~/algs4-data/tinyW.txt < ~/algs4-data/tinyT.txt | more
  * 50
  * 99
  * 13

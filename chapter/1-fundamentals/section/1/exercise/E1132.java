@@ -7,7 +7,7 @@ import java.util.Arrays;
  * Compilation: javac E1132.java
  * Execution: java E1132 <int_intervals> <double_low> <double_high> < <input_file>
  *
- * $ java E1132 10 0 1000 < ./data/doubles.txt
+ * $ java E1132 10 0 1000 < ~/algs4-data/custom/doubles.txt
  * Histogram: [112, 98, 78, 100, 99, 118, 104, 104, 99, 88]
  * Max: 118.0 Interval Size: 100.0
  */

@@ -5,13 +5,13 @@ import edu.princeton.cs.algs4.StdOut;
  * Compilation: javac E1121.java
  * Execution: java E1121 < <input_stream>
  *
- * $ java E1121 < ./data/names.txt
- * isaac         10    10       1.000
- * danni          8     4       2.000
- * peter         10     2       5.000
- * pablo          7     3       2.333
- * krystel        9     5       1.800
- * sue            3     2       1.500
+ * $ java E1121 < ~/algs4-data/custom/names.txt
+ * java          10    10       1.000
+ * c              8     4       2.000
+ * haskell       10     2       5.000
+ * rubi           7     3       2.333
+ * python         9     5       1.800
+ * node           3     2       1.500
  */
 
 /**

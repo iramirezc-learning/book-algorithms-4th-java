@@ -7,7 +7,7 @@ import edu.princeton.cs.algs4.StdOut;
  * Compilation: javac E1138.java
  * Execution: java E1138 <whitelist> <input_data>
  *
- * $ java E1138 ./data/largeW.txt ./data/largeT.txt
+ * $ java E1138 ~/algs4-data/largeW.txt ~/algs4-data/largeT.txt
  * BruteForceSearch Total Time:
  *  1124417.406646(ms) = 18.7 minutes!
  * Not found: 367966

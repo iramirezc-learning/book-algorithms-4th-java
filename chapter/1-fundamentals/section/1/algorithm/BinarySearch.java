@@ -51,7 +51,11 @@ public class BinarySearch {
       return mid;
   }
 
-  public static void main(String[] args) {
+  public static void main(String[] args) throws Exception {
+    if (args.length != 1) {
+      throw new Error("You must provide the <white_list_file_name>");
+    }
+
     In in = new In(args[0]);
     int[] whitelist = in.readAllInts();
 

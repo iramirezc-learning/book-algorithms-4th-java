@@ -32,9 +32,11 @@ StdOut.println(string2);
 >
 > hello
 
+Note: It seems that Strings are copied like primitive values. By Value and not by Reference as I initially thought.
+
 [**Code ->** E1204.java](./E1204.java)
 
-**1.2.5 What does the following code fragment print?**
+#### 1.2.5 What does the following code fragment print?
 
 ```java
 String s = "Hello World";
@@ -44,6 +46,8 @@ StdOut.println(s);
 ```
 
 > Hello World
+
+Note: it seems that string `s` is unaltered by its methods. They only return the new string value.
 
 [**Code ->** E1205.java](./E1205.java)
 

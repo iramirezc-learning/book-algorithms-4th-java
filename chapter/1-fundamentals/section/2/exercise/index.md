@@ -12,9 +12,9 @@
 
 #### 1.2.2 Write an `Interval1D` client that takes an `int` value `n` as command-line argument, reads `n` intervals (each defined by a pair of `double` values) from standard input and prints all pairs that intersect.
 
-> TODO
+[**Code ->** E1202.java](./E1202.java)
 
-**1.2.3 Write an `Interval2D` client that takes command-line arguments `n`, `min` and `max` and generates `n` random 2D intervals whose width and height are uniformly distributed between `min` and `max` in the unit square. Draw them on `StdDraw` and print the number of pairs of intervals that intersect and the number of intervals that are contained in one another.**
+#### 1.2.3 Write an `Interval2D` client that takes command-line arguments `n`, `min` and `max` and generates `n` random 2D intervals whose width and height are uniformly distributed between `min` and `max` in the unit square. Draw them on `StdDraw` and print the number of pairs of intervals that intersect and the number of intervals that are contained in one another.**
 
 > TODO
 

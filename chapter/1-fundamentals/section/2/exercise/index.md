@@ -18,7 +18,7 @@
 
 [**Code ->** E1203.java](./E1203.java)
 
-**1.2.4 What does the following code fragment print?**
+#### 1.2.4 What does the following code fragment print?
 
 ```java
 String string1 = "hello";
@@ -28,11 +28,11 @@ StdOut.println(string1);
 StdOut.println(string2);
 ```
 
-> TODO
->
 > world
 >
-> world
+> hello
+
+[**Code ->** E1204.java](./E1204.java)
 
 **1.2.5 What does the following code fragment print?**
 

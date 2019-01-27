@@ -51,7 +51,11 @@ Note: it seems that string `s` is unaltered by its methods. They only return the
 
 [**Code ->** E1205.java](./E1205.java)
 
-**1.2.6 A string `s` is a _circular shift_ (or circular rotation) of a string `t` if it matches shwn the characters are circulary shifted by any number of positions; e.g., `ACTGACG` is a circular shift of `TGACCGAC`, and vice versa. Detecting this condition is important in the study of gneomic sequences. Write a program that checks whether two given strings `s` and `t` are circular shifts of one another. _Hint:_ The solutions is a one-liner with `indexOf()`, `length()` and string concatenation.**
+#### 1.2.6 A string `s` is a _circular shift_ (or _circular rotation_) of a string `t` if it matches when the characters are circularly shifted by any number of positions; e.g., `ACTGACG` is a circular shift of `TGACGAC`, and vice versa. Detecting this condition is important in the study of genomic sequences. Write a program that checks whether two given strings `s` and `t` are circular shifts of one another.
+
+_Hint:_ The solution is a one-liner with `indexOf()`, `length()` and string concatenation.
+
+[**Code ->** E1206.java](./E1206.java)
 
 **1.2.7 What dows the following recursive function return?**
 

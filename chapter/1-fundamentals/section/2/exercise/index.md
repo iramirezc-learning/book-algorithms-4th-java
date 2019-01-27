@@ -57,7 +57,7 @@ _Hint:_ The solution is a one-liner with `indexOf()`, `length()` and string conc
 
 [**Code ->** E1206.java](./E1206.java)
 
-**1.2.7 What dows the following recursive function return?**
+#### 1.2.7 What does the following recursive function return?
 
 ```java
 public static String mystery(String s) {
@@ -69,9 +69,9 @@ public static String mystery(String s) {
 }
 ```
 
-> TODO
->
-> it will return a string reversed
+> it will return a reversed string
+
+[**Code ->** E1207.java](./E1207.java)
 
 **1.2.8 Suppose that `a[]` and `b[]` are each integer arrays consisting of millions of integers. What does the follow code do? Is it reasonably efficient?**
 

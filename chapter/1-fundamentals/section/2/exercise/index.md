@@ -73,15 +73,15 @@ public static String mystery(String s) {
 
 [**Code ->** E1207.java](./E1207.java)
 
-**1.2.8 Suppose that `a[]` and `b[]` are each integer arrays consisting of millions of integers. What does the follow code do? Is it reasonably efficient?**
+#### 1.2.8 Suppose that `a[]` and `b[]` are each integer arrays consisting of millions of integers. What does the follow code do? Is it reasonably efficient?
 
 ```java
 int[] t = a; a = b; b = t;
 ```
 
-> TODO
+> It switches the contents of `a` and `b`.
 >
-> It switches the contents of a and b. Yes, it is efficient since only changes the corresponding reference in memory.
+> Yes, it is efficient since only changes the corresponding reference in memory.
 
 **1.2.9 Instrument `BinarySeach` (page 47) to use a `Counter` to count the total number of key examined during all searches and then print the total after all searches are complete. _Hint:_ Create a `Counter` in `main()` and pass it as an argument to `indexOf()`.**
 

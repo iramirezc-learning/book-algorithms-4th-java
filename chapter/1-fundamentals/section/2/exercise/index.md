@@ -83,9 +83,11 @@ int[] t = a; a = b; b = t;
 >
 > Yes, it is efficient since only changes the corresponding reference in memory.
 
-**1.2.9 Instrument `BinarySeach` (page 47) to use a `Counter` to count the total number of key examined during all searches and then print the total after all searches are complete. _Hint:_ Create a `Counter` in `main()` and pass it as an argument to `indexOf()`.**
+#### 1.2.9 Instrument `BinarySearch` (page 47) to use a `Counter` to count the total number of key examined during all searches and then print the total after all searches are complete.
 
-> TODO
+_Hint:_ Create a `Counter` in `main()` and pass it as an argument to `indexOf()`.
+
+[**Code ->** E1209.java](./E1209.java)
 
 **1.2.10 Develop a class `VisualCounter` that allows both increment and decrement operations. Take two arguments `n` and `max` in the constructor, where `n` specifies the maximum number of operations and `max` specifies the maximum absolute value for the counter. As a side effect, create a plot showing the value of the counter each time its tally changes.**
 

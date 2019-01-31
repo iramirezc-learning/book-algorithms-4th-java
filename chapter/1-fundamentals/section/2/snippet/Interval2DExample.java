@@ -21,7 +21,11 @@ import edu.princeton.cs.algs4.StdRandom;
  */
 public class Interval2DExample {
 
-  public static void main(String[] args) {
+  public static void main(String[] args) throws Exception {
+    if (args.length != 5) {
+      throw new Error("You must provide: <double_xmin> <double_xmax> <double_ymin> <double_ymax> <int_trials>");
+    }
+
     double xmin = Double.parseDouble(args[0]);
     double xmax = Double.parseDouble(args[1]);
     double ymin = Double.parseDouble(args[2]);

@@ -37,7 +37,11 @@ public class Counter {
     return count + " " + name;
   }
 
-  public static void main(String[] args) {
+  public static void main(String[] args) throws Exception {
+    if (args.length != 1) {
+      throw new Error("You must provide: <n_trials>");
+    }
+
     // Ref: Flips p. 89
     int trials = Integer.parseInt(args[0]);
     Counter heads = new Counter("heads");

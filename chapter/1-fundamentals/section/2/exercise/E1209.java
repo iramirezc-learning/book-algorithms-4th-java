@@ -40,7 +40,7 @@ public class E1209 {
     return -1;
   }
 
-  public static void main(String[] args) {
+  public static void main(String[] args) throws Exception {
     if (args.length != 1) {
       throw new Error("You must provide the <white_list_file_name>");
     }

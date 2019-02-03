@@ -4,6 +4,7 @@ import edu.princeton.cs.algs4.StdOut;
  * Type: ADT
  * Description: An abstract data type to encapsulate dates.
  * Ref: p. 91
+ *
  * Compilation: javac Date.java
  * Execution: java Date <month> <day> <year>
  *
@@ -41,7 +42,11 @@ public class Date {
     return month() + "/" + day() + "/" + year();
   }
 
-  public static void main(String[] args) {
+  public static void main(String[] args) throws Exception {
+    if (args.length != 3) {
+      throw new Error("You must provide: <month> <day> <year>");
+    }
+
     int m = Integer.parseInt(args[0]);
     int d = Integer.parseInt(args[1]);
     int y = Integer.parseInt(args[2]);

@@ -5,12 +5,13 @@ import edu.princeton.cs.algs4.StdOut;
  * Type: Snippet
  * Description: Count triples that sum to 0.
  * Ref: p. 173
+ *
  * Compilation: javac ThreeSum.java
  * Execution: java ThreeSum <file>
  *
  * $ java ThreeSum ~/algs4-data/1Kints.txt
  * 70
- * 
+ *
  * $ java ThreeSum ~/algs4-data/2Kints.txt
  * 528
  *
@@ -41,7 +42,11 @@ public class ThreeSum {
     return count;
   }
 
-  public static void main(String[] args) {
+  public static void main(String[] args) throws Exception {
+    if (args.length != 1) {
+      throw new Error("You must provide: <input_file>");
+    }
+
     In in = new In(args[0]);
     int[] a = in.readAllInts();
     StdOut.println(count(a));

@@ -12,6 +12,10 @@ import edu.princeton.cs.algs4.StdRandom;
  * $ java SortCompare Insertion Selection 1000 100
  * For 1000 random Doubles
  *     Insertion is 1.2 times faster than Selection
+ *
+ * $ java SortCompare Shell Insertion 1000 100
+ * For 1000 random Doubles
+ *     Shell is 4.1 times faster than Insertion
  */
 
 /**
@@ -25,6 +29,9 @@ public class SortCompare {
     }
     if (algorithm.equals("Selection")) {
       SelectionSort.sort(a);
+    }
+    if (algorithm.equals("Shell")) {
+      ShellSort.sort(a);
     }
     return timer.elapsedTime();
   }

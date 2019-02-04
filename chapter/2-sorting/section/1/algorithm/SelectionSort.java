@@ -11,7 +11,13 @@ import edu.princeton.cs.algs4.StdOut;
  * 
  * $ java SelectionSort < ~/algs4-data/tiny.txt
  * A E E L M O P R S T X
+ * isSorted? true
+ * 
+ * $ java SelectionSort < ~/algs4-data/words3.txt
+ * all bad bed bug dad dim dug ... yes yet zoo
+ * isSorted? true
  */
+
 /**
  * SelectionSort
  */

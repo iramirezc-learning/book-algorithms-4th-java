@@ -9,8 +9,13 @@ import edu.princeton.cs.algs4.StdOut;
  * Compilation: javac InsertionSort.java
  * Execution: java InsertionSort < <input_file>
  *
- * java InsertionSort < ~/algs4-data/tiny.txt
+ * $ java InsertionSort < ~/algs4-data/tiny.txt
  * A E E L M O P R S T X
+ * isSorted? true
+ *
+ * $ java InsertionSort < ~/algs4-data/words3.txt
+ * all bad bed bug dad dim dug ... yes yet zoo
+ * isSorted? true
  */
 
 /**

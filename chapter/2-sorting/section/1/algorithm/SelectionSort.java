@@ -3,7 +3,7 @@ import edu.princeton.cs.algs4.StdOut;
 
 /**
  * Type: Algorithm
- * Description: SelectionSort Algortihm
+ * Description: SelectionSort Algorithm
  * Ref: p. 249
  * 
  * Compilation: javac SelectionSort.java

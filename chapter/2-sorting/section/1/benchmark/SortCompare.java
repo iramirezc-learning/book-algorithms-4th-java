@@ -16,6 +16,14 @@ import edu.princeton.cs.algs4.StdRandom;
  * $ java SortCompare Shell Insertion 1000 100
  * For 1000 random Doubles
  *     Shell is 4.1 times faster than Insertion
+ *
+ * $ java SortCompare Merge Shell 100000 100
+ * For 100000 random Doubles
+ *     Merge is 1.8 times faster than Shell
+ *
+ * $ java SortCompare MergeBU Merge 100000 100
+ * For 100000 random Doubles
+ *     MergeBU is 0.9 times faster than Merge
  */
 
 /**
@@ -32,6 +40,12 @@ public class SortCompare {
     }
     if (algorithm.equals("Shell")) {
       ShellSort.sort(a);
+    }
+    if (algorithm.equals("Merge")) {
+      MergeSort.sort(a);
+    }
+    if (algorithm.equals("MergeBU")) {
+      MergeBUSort.sort(a);
     }
     return timer.elapsedTime();
   }

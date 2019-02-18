@@ -28,6 +28,10 @@ import edu.princeton.cs.algs4.StdRandom;
  * $ java SortCompare Quick Merge 100000 100
  * For 100000 random Doubles
  *     Quick is 1.1 times faster than Merge
+ *
+ * $ java SortCompare Quick3 Quick 100 100
+ * For 100 random Doubles
+ *     Quick3 is 1.3 times faster than Quick
  */
 
 /**
@@ -53,6 +57,9 @@ public class SortCompare {
     }
     if (algorithm.equals("Quick")) {
       QuickSort.sort(a);
+    }
+    if (algorithm.equals("Quick3")) {
+      QuickSort3Way.sort(a);
     }
     return timer.elapsedTime();
   }

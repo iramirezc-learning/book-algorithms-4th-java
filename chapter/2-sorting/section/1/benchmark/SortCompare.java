@@ -24,6 +24,10 @@ import edu.princeton.cs.algs4.StdRandom;
  * $ java SortCompare MergeBU Merge 100000 100
  * For 100000 random Doubles
  *     MergeBU is 0.9 times faster than Merge
+ *
+ * $ java SortCompare Quick Merge 100000 100
+ * For 100000 random Doubles
+ *     Quick is 1.1 times faster than Merge
  */
 
 /**
@@ -46,6 +50,9 @@ public class SortCompare {
     }
     if (algorithm.equals("MergeBU")) {
       MergeBUSort.sort(a);
+    }
+    if (algorithm.equals("Quick")) {
+      QuickSort.sort(a);
     }
     return timer.elapsedTime();
   }

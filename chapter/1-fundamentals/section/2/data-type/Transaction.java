@@ -9,8 +9,8 @@ import edu.princeton.cs.algs4.StdOut;
  * Execution: java Transaction
  *
  * $ java Transaction
- * Transaction1: Isaac 2019/2/25 99.99
- * Transaction2: Danni 2019/5/13 10000.0
+ * Transaction1: Isaac 2/25/2019 99.99
+ * Transaction2: Danni 5/13/2019 10000.0
  */
 
 /**
@@ -44,8 +44,8 @@ public class Transaction {
   }
 
   public static void main(String[] args) {
-    Transaction transaction1 = new Transaction("Isaac", new Date(2019, 2, 25), 99.99);
-    Transaction transaction2 = new Transaction("Danni", new Date(2019, 5, 13), 10000);
+    Transaction transaction1 = new Transaction("Isaac", new Date(2, 25, 2019), 99.99);
+    Transaction transaction2 = new Transaction("Danni", new Date(5, 13, 2019), 10000);
 
     StdOut.printf("Transaction1: %s\n", transaction1);
     StdOut.printf("Transaction2: %s\n", transaction2);

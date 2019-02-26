@@ -89,7 +89,7 @@ _Hint:_ Create a `Counter` in `main()` and pass it as an argument to `indexOf()`
 
 [**Code ->** E1209.java](./E1209.java)
 
-**1.2.10 Develop a class `VisualCounter` that allows both increment and decrement operations. Take two arguments `n` and `max` in the constructor, where `n` specifies the maximum number of operations and `max` specifies the maximum absolute value for the counter. As a side effect, create a plot showing the value of the counter each time its tally changes.**
+#### 1.2.10 Develop a class `VisualCounter` that allows both increment and decrement operations. Take two arguments `n` and `max` in the constructor, where `n` specifies the maximum number of operations and `max` specifies the maximum absolute value for the counter. As a side effect, create a plot showing the value of the counter each time its tally changes.
 
 > TODO
 
@@ -101,9 +101,9 @@ _Hint:_ Create a `Counter` in `main()` and pass it as an argument to `indexOf()`
 
 > TODO
 
-**1.2.13 Using our implementation of `Date` as a model (page 91), develop an implementation of `Transaction`.**
+#### 1.2.13 Using our implementation of `Date` as a model (page 91), develop an implementation of `Transaction`.
 
-> TODO
+[**Code ->** E1213.java](./E1213.java)
 
 **1.2.14 Using our implementation of `equals()` in `Date` as a model (page 103), develop an implementation `equals()` for `Transaction`.**
 
@@ -173,7 +173,7 @@ public class Accumulator {
 
 > TODO
 
-**1.2.19 _Parsing_. Develop the parse constructors for your `Date` and `Transaction` implementations of Exercise 1.2.13 that take a single `String` argument to specify the initialization values, using the formats given in the table below.**
+#### 1.2.19 _Parsing_. Develop the parse constructors for your `Date` and `Transaction` implementations of _Exercise 1.2.13_ that take a single `String` argument to specify the initialization values, using the formats given in the table below.
 
 **_Partial solution:_**
 

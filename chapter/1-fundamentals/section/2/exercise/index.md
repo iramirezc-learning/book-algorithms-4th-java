@@ -105,9 +105,9 @@ _Hint:_ Create a `Counter` in `main()` and pass it as an argument to `indexOf()`
 
 [**Code ->** E1213.java](./E1213.java)
 
-**1.2.14 Using our implementation of `equals()` in `Date` as a model (page 103), develop an implementation `equals()` for `Transaction`.**
+#### 1.2.14 Using our implementation of `equals()` in `Date` as a model (page 103), develop an implementation `equals()` for `Transaction`.
 
-> TODO
+[**Code ->** E1214.java](./E1214.java)
 
 ### Creative Problems
 

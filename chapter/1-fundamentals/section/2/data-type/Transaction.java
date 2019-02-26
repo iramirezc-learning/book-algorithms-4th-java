@@ -10,7 +10,9 @@ import edu.princeton.cs.algs4.StdOut;
  *
  * $ java Transaction
  * Transaction1: Isaac 2/25/2019 99.99
+ * Parsed Transaction1: Isaac 2/25/2019 99.99
  * Transaction2: Danni 5/13/2019 10000.0
+ *
  * equals()
  * Is 'Isaac 2/25/2019 500.0' equals to 'Isaac 2/25/2019 500.0'? true
  * Is 'Isaac 2/25/2019 500.0' equals to 'Isaac 2/25/2019 500.0'? true
@@ -33,6 +35,13 @@ public class Transaction {
     this.who = who;
     this.when = when;
     this.amount = amount;
+  }
+
+  public Transaction(String transaction) {
+    String[] parts = transaction.split(" ");
+    this.who = parts[0];
+    this.when = new Date(parts[1]);
+    this.amount = Double.parseDouble(parts[2]);
   }
 
   public String who() {
@@ -76,12 +85,13 @@ public class Transaction {
     Transaction transaction2 = new Transaction("Danni", new Date(5, 13, 2019), 10000);
 
     StdOut.printf("Transaction1: %s\n", transaction1);
+    StdOut.printf("Parsed Transaction1: %s\n", new Transaction(transaction1.toString()));
     StdOut.printf("Transaction2: %s\n", transaction2);
 
-    StdOut.println("equals()");
+    StdOut.println("\nequals()");
 
     Transaction t1 = new Transaction("Isaac", new Date(2, 25, 2019), 500);
-    Transaction t2 = new Transaction("Isaac", new Date(2, 25, 2019), 500);
+    Transaction t2 = new Transaction(t1.toString()); // parsed
     Transaction t3 = new Transaction("Isaac", new Date(3, 25, 2019), 500);
     Transaction t4 = new Transaction("Nahum", new Date(2, 25, 2019), 500);
     Transaction t5 = new Transaction("Isaac", new Date(2, 25, 2019), 499);

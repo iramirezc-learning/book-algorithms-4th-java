@@ -10,6 +10,8 @@ import edu.princeton.cs.algs4.StdOut;
  *
  * $ java Date 9 27 1987
  * Your Date is: 9/27/1987
+ * Parsed: 9/27/1987
+ *
  * equals()
  * Is 9/27/1987 equals to 9/27/1987? true
  * Is 9/27/1987 equals to 9/27/1987? true
@@ -33,6 +35,13 @@ public class Date implements Comparable<Date> {
     month = m;
     day = d;
     year = y;
+  }
+
+  public Date(String date) {
+    String[] fields = date.split("/");
+    month = Integer.parseInt(fields[0]);
+    day = Integer.parseInt(fields[1]);
+    year = Integer.parseInt(fields[2]);
   }
 
   public int month() {
@@ -96,6 +105,8 @@ public class Date implements Comparable<Date> {
     Date yourDate = new Date(m, d, y);
 
     StdOut.println("Your Date is: " + yourDate);
+
+    StdOut.println("Parsed: " + new Date(yourDate.toString()) + "\n");
 
     StdOut.println("equals()");
     Date date = new Date(9, 27, 1987);

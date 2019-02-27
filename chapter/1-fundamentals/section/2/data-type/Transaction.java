@@ -38,7 +38,7 @@ public class Transaction {
   }
 
   public Transaction(String transaction) {
-    String[] parts = transaction.split(" ");
+    String[] parts = transaction.split("\\s+");
     this.who = parts[0];
     this.when = new Date(parts[1]);
     this.amount = Double.parseDouble(parts[2]);
@@ -85,8 +85,11 @@ public class Transaction {
     Transaction transaction2 = new Transaction("Danni", new Date(5, 13, 2019), 10000);
 
     StdOut.printf("Transaction1: %s\n", transaction1);
-    StdOut.printf("Parsed Transaction1: %s\n", new Transaction(transaction1.toString()));
     StdOut.printf("Transaction2: %s\n", transaction2);
+
+    StdOut.println("\nParsed Transactions:");
+    StdOut.printf("Transaction1: %s\n", new Transaction(transaction1.toString()));
+    StdOut.printf("Trimmed: %s\n", new Transaction("Turing      6/17/1990   644.08"));
 
     StdOut.println("\nequals()");
 

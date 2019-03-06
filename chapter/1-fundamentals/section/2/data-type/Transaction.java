@@ -21,12 +21,15 @@ import edu.princeton.cs.algs4.StdOut;
  * Is 'Isaac 2/25/2019 500.0' equals to 'Isaac 3/25/2019 500.0'? false
  * Is 'Isaac 2/25/2019 500.0' equals to 'Nahum 2/25/2019 500.0'? false
  * Is 'Isaac 2/25/2019 500.0' equals to 'Isaac 2/25/2019 499.0'? false
+ *
+ * compareTo()
+ * Is 'Isaac 2/25/2019 499.0' <= 'Nahum 2/25/2019 500.0' ? true
  */
 
 /**
  * Transaction
  */
-public class Transaction {
+public class Transaction implements Comparable<Transaction> {
   private final String who;
   private final Date when;
   private final double amount;
@@ -80,6 +83,14 @@ public class Transaction {
     return true;
   }
 
+  public int compareTo(Transaction that) {
+    if (this.amount() > that.amount())
+      return +1;
+    if (this.amount() < that.amount())
+      return -1;
+    return 0;
+  }
+
   public static void main(String[] args) {
     Transaction transaction1 = new Transaction("Isaac", new Date(2, 25, 2019), 99.99);
     Transaction transaction2 = new Transaction("Danni", new Date(5, 13, 2019), 10000);
@@ -107,5 +118,8 @@ public class Transaction {
     StdOut.printf("Is '%s' equals to '%s'? %b\n", t1, t3, t1.equals(t3)); // false
     StdOut.printf("Is '%s' equals to '%s'? %b\n", t1, t4, t1.equals(t4)); // false
     StdOut.printf("Is '%s' equals to '%s'? %b\n", t1, t5, t1.equals(t5)); // false
+
+    StdOut.println("\ncompareTo()");
+    StdOut.printf("Is '%s' <= '%s' ? %s\n", t5, t4, t5.compareTo(t4) <= 0);
   }
 }

@@ -25,3 +25,11 @@ i           a[]
 ```
 
 [**Code ->** E2101.java](./E2101.java)
+
+#### 2.1.2 What is the maximum number of exchanges involving any particular item during selection sort? What is the average number of exchanges involving an item?
+
+> TODO
+
+#### 2.1.21 Comparable transactions. Using our code for `Date` (page 247) as a model, expand you implementation of Transaction (Exercise 1.2.13) so that it implements `Comparable`, such that transactions are kept in order by amount.
+
+[**Code ->** E2121.java](./E2121.java)

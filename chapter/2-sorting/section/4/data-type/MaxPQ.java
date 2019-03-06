@@ -68,7 +68,7 @@ public class MaxPQ<Key extends Comparable<Key>> {
 
   /**
    * Returns the size of the queue 'n'
-   * Ref:  p. 318
+   * Ref: p. 318
    */
   public int size() {
     return n;
@@ -76,7 +76,7 @@ public class MaxPQ<Key extends Comparable<Key>> {
 
   /**
    * Compares if the item in position 'i'
-   * is less thant the item in position 'j'.
+   * is less than the item in position 'j'.
    * Ref: p. 315
    */
   private boolean less(int i, int j) {

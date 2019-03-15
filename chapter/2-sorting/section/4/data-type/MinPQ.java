@@ -84,8 +84,8 @@ public class MinPQ<Key extends Comparable<Key>> {
    * This is the opposite of what MaxPQ does.
    * Ref: p. 309
    */
-  private boolean less(int i, int j) {
-    return pq[j].compareTo(pq[i]) < 0;
+  private boolean greater(int i, int j) {
+    return pq[i].compareTo(pq[j]) > 0;
   }
 
   /**
@@ -100,15 +100,16 @@ public class MinPQ<Key extends Comparable<Key>> {
   }
 
   /**
-   * Bottom-up reheapify. Restablishes the order of the heap
-   * by interchanging a node in position 'k'
-   * with its parent at position 'k/2' only if its smaller.
-   * The process continues until the node is greater than 
-   * the new parent or becomes the new root: k = 1.
+   * Bottom-up reheapify. Restablishes the order
+   * of the heap by interchanging a node in
+   * position 'k' with its parent at position 'k/2'
+   * only if its smaller.
+   * The process continues until the node is greater 
+   * than the new parent or becomes the new root: k = 1.
    * Ref. p. 316
    */
   private void swim(int k) {
-    while (k > 1 && less(k / 2, k)) {
+    while (k > 1 && greater(k / 2, k)) {
       exchange(k / 2, k);
       k = k / 2;
     }
@@ -125,22 +126,24 @@ public class MinPQ<Key extends Comparable<Key>> {
    */
   private void sink(int k) {
     // do it until '2k' is smaller or equal 
-    // to the last node 'n'
-    while (2 * k <= n) {
+    // to the last node 'n' returned by size()
+    // in other words, if there are any children
+    // for 'k' node
+    while (2 * k <= size()) {
       int j = 2 * k; // select left child
 
       // if 'j < n' means that there's no right child
-      // if there's a right child and is greater
-      // than the left child, then select it 
+      // if the left child is greater than the right child
+      // then select it (since is smaller)
       // by incrementing 'j' by 1
-      if (j < n && less(j, j + 1)) {
+      if (j < n && greater(j, j + 1)) {
         j++;
       }
 
-      // if current node at key 'k' is greater than
+      // if current node at key 'k' is less than
       // node at key 'j' means that node can become
       // the new parent and exit
-      if (!less(k, j)) {
+      if (!greater(k, j)) {
         break;
       }
 
@@ -179,7 +182,7 @@ public class MinPQ<Key extends Comparable<Key>> {
    */
   public Key delMin() {
     // Retrieve max from top
-    Key max = min();
+    Key min = min();
     // Exchange with the last item
     // and decrement the size of the queue
     exchange(1, n--);
@@ -190,7 +193,7 @@ public class MinPQ<Key extends Comparable<Key>> {
     // Restores heap order
     sink(1);
 
-    return max;
+    return min;
   }
 
   /**
@@ -235,6 +238,11 @@ public class MinPQ<Key extends Comparable<Key>> {
         if (queue.isFull()) {
           queue.delMin();
         } else {
+          // TODO: it does not makes sense
+          // to insert a key that is less than 
+          // the minimum in the queue for this
+          // exercise, it will be immediatly
+          // removed anyways when quque is full
           queue.insert(StdIn.readLine());
         }
       }

@@ -76,7 +76,7 @@ public class MaxPQ<Key extends Comparable<Key>> {
 
   /**
    * Compares if the item in position 'i'
-   * is less than the item in position 'j'.
+   * is smaller than the item in position 'j'.
    * Ref: p. 315
    */
   private boolean less(int i, int j) {

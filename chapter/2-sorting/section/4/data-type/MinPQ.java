@@ -37,8 +37,10 @@ public class MinPQ<Key extends Comparable<Key>> {
    */
   private int n = 0;
 
+  /**
+   * TODO: implement
+   */
   public MinPQ() {
-    // TODO: implement
   }
 
   /**
@@ -49,8 +51,10 @@ public class MinPQ<Key extends Comparable<Key>> {
     pq = (Key[]) new Comparable[max + 1];
   }
 
+  /**
+   * TODO: implement
+   */
   public MinPQ(Key[] a) {
-    // TODO: implement
   }
 
   /**
@@ -181,7 +185,7 @@ public class MinPQ<Key extends Comparable<Key>> {
    * Ref: p. 318
    */
   public Key delMin() {
-    // Retrieve max from top
+    // Retrieve min from top
     Key min = min();
     // Exchange with the last item
     // and decrement the size of the queue

@@ -38,7 +38,7 @@ import edu.princeton.cs.algs4.StdOut;
  * rank('L'): 4
  * rank('Z'): 10
  * select(0): A
- * floor('A'): null
+ * floor('A'): A
  * floor('N'): M
  * ceiling('N'): P
  * ceiling('Z'): null
@@ -226,9 +226,12 @@ public class BinarySearchST<Key extends Comparable<Key>, Value> implements Order
    */
   public Key floor(Key key) {
     int i = rank(key);
+    boolean keyExists = contains(key);
 
-    if (i == 0)
+    if (i == 0 && !keyExists)
       return null;
+    else if (i == 0 && keyExists)
+      return keys[0];
     else
       return keys[i - 1];
   }

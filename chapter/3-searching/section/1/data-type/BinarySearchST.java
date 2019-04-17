@@ -23,9 +23,9 @@ import edu.princeton.cs.algs4.StdOut;
  * S 0
  * X 7
  * size(): 10
+ * size('A', 'X'): 10
  * size('A', 'Z'): 10
  * size('D', 'O'): 4
- * size('A', 'X'): 10
  * size('H', 'R'): 5
  * isEmpty(): false
  * contains('L'): true

@@ -1,36 +1,19 @@
-# Algorithms
+# algorithms-red-book
 
 Code exercises and personal notes from the book [Algorithms (4th edition)](https://www.amazon.com/Algorithms-4th-Robert-Sedgewick/dp/032157351X) by Robert Sedgewick and Kevin Wayne.
 
-> :warning: still in progress...
+> :warning: reading in progress...
 
-## Resources from the book
+## Book Resources
 
 * [Video Lectures](http://www.informit.com/store/algorithms-video-lectures-24-part-lecture-series-9780134384436)
 * [Booksite](https://algs4.cs.princeton.edu)
 * [Standard Libraries](https://introcs.cs.princeton.edu/java/stdlib/)
 * [Code & Solutions](https://algs4.cs.princeton.edu/code/)
 
-## Algorithms & Data Structures
+## My Solutions
 
-### 1. Fundamentals
-
-* [Euclidean Algorithm](./js/Euclidean.md)
-* [Binary Search](./js/BinarySearch.md)
-
-#### 1.1 Basic Programming Model - [exercises](./exercises/section-1.1/answers-1.1.md)
-
-#### 1.2 Data Abstraction - [exercises](./exercises/section-1.2/answers-1.2.md)
-
-### 2. Sorting
-
-### 3. Searching
-
-### 4. Graphs
-
-### 5. Strings
-
-### 6. Context
+[Exercise List](chapters/exercises.list.md)
 
 ## Installation of `algs4.jar`
 
@@ -64,18 +47,4 @@ Compile your java class:
 
 ```sh
 javac BinarySearch.java
-```
-
-## Tests (Node.js)
-
-Install `mocha` globally:
-
-```sh
-npm install -g mocha
-```
-
-Run test:
-
-```sh
-npm run test
 ```

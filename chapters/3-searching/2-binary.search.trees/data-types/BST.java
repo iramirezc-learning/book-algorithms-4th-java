@@ -42,8 +42,6 @@ import edu.princeton.cs.algs4.StdOut;
  * floor('N'): M
  * ceiling('N'): P
  * Exception in thread "main" java.util.NoSuchElementException
- *         at BST.ceiling(BST.java:259)
- *         at BST.main(BST.java:561)
  */
 
 /**
@@ -65,7 +63,7 @@ public class BST<Key extends Comparable<Key>, Value> {
     private Value val;
     // subtree of nodes smaller than this node
     private Node left;
-    // subtree of nodes greather than this node
+    // subtree of nodes greater than this node
     private Node right;
     // number of nodes in the subtree rooted here
     private int n;
@@ -252,7 +250,7 @@ public class BST<Key extends Comparable<Key>, Value> {
 
   /**
    * Returns the largest key that is less than
-   * or equal to the given 'key' starting at 
+   * or equal to the given 'key' starting at
    * root node 'x'.
    */
   private Node floor(Node x, Key key) {
@@ -345,7 +343,7 @@ public class BST<Key extends Comparable<Key>, Value> {
     // if the left size is smaller than the rank,
     else if (s < k)
       // then, the node can be in the right subtree.
-      // substract the left subtree size 's'
+      // subtract the left subtree size 's'
       // and the current parent (1) from 'k'
       // discarding all those nodes.
       return select(x.right, k - s - 1);
@@ -470,7 +468,7 @@ public class BST<Key extends Comparable<Key>, Value> {
 
       // if node 'x' has both children
       // then use the T. Hibbard's technique
-      // by selecting the smallest succesor
+      // by selecting the smallest sucessor
       // from the right subtree.
 
       // save current node 'x'

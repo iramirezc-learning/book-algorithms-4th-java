@@ -130,11 +130,11 @@ public class HashSET<Key> {
   }
 
   /**
-   * Returns the value associated with the specified key.
+   * Returns the index associated with the specified key.
    *
    * @param key the key
-   * @return the value associated with {@code key};
-   *         {@code null} if no such value
+   * @return the index associated with {@code key};
+   *         {@code null} if no such index
    * @throws IllegalArgumentException if {@code key} is {@code null}
    */
   private int get(Key key) {
@@ -147,7 +147,7 @@ public class HashSET<Key> {
   }
 
   /**
-   * Removes the specified key and its associated value from this symbol table
+   * Removes the specified key from this symbol table
    * (if the key is in this symbol table).
    *
    * @param  key the key to be removed

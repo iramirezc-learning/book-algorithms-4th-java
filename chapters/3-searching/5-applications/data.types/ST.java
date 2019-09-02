@@ -139,29 +139,29 @@ public class ST<Key extends Comparable<Key>, Value> {
    * @param val the value
    * @throws IllegalArgumentException if {@code key} is {@code null}
    */
-  public void add(Key key, Value val) {
+  public void put(Key key, Value val) {
     if (key == null)
-      throw new IllegalArgumentException("first argument to add() is null");
+      throw new IllegalArgumentException("first argument to put() is null");
     if (val == null) {
       delete(key);
       return;
     }
 
-    root = add(root, key, val);
+    root = put(root, key, val);
     root.color = BLACK;
     // assert check();
   }
 
   // insert the key-value pair in the subtree rooted at h
-  private Node add(Node h, Key key, Value val) {
+  private Node put(Node h, Key key, Value val) {
     if (h == null)
       return new Node(key, val, RED, 1);
 
     int cmp = key.compareTo(h.key);
     if (cmp < 0)
-      h.left = add(h.left, key, val);
+      h.left = put(h.left, key, val);
     else if (cmp > 0)
-      h.right = add(h.right, key, val);
+      h.right = put(h.right, key, val);
     else
       h.val = val;
 
@@ -654,7 +654,7 @@ public class ST<Key extends Comparable<Key>, Value> {
     ST<String, Integer> st = new ST<String, Integer>();
     for (int i = 0; !StdIn.isEmpty(); i++) {
       String key = StdIn.readString();
-      st.add(key, i);
+      st.put(key, i);
     }
 
     // print keys

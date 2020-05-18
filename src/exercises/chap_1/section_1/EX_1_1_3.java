@@ -1,20 +1,19 @@
 import edu.princeton.cs.algs4.StdOut;
 
 /**
- * Compilation: javac E1103.java
- * Execution: java E1103 <number1> <number2> <number3>
+ * Exercise: 1.1.3
+ * Description: Checks if the three numbers provided are equal.
+ * Compilation: javac EX_1_1_3.java
+ * Execution: java EX_1_1_3 <number1> <number2> <number3>
+ * Examples:
  *
- * $ java E1103 5 5 5
+ * $ java EX_1_1_3 5 5 5
  * equal
  *
- * $ java E1103 5 1 5
+ * $ java EX_1_1_3 5 1 5
  * not equal
  */
-
-/**
- * E1103. Checks if the three numbers provided are equal.
- */
-public class E1103 {
+public class EX_1_1_3 {
   public static void main(String[] args) throws Exception {
     if (args.length != 3) {
       throw new Exception("Must provide exactly 3 numbers");

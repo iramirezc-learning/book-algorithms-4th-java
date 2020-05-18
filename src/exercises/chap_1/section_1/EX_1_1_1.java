@@ -1,19 +1,18 @@
 import edu.princeton.cs.algs4.StdOut;
 
 /**
- * Compilation: javac E1101.java
- * Execution: java E1101
+ * Exercise: 1.1.1
+ * Description: Expressions
+ * Compilation: javac EX_1_1_1.java
+ * Execution: java EX_1_1_1
+ * Example:
  *
- * $ java E1101
+ * $ java EX_1_1_1
  * a) 7
  * b) 200.0000002
  * c) true
  */
-
-/**
- * E1101. Expressions
- */
-public class E1101 {
+public class EX_1_1_1 {
   public static void main(String[] args) {
 
     StdOut.println("a) " + (0 + 15 / 2));

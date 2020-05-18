@@ -1,20 +1,20 @@
 import edu.princeton.cs.algs4.StdOut;
 
 /**
- * Compilation: javac E1104.java
- * Error: 4 Syntaxis errors
+ * Exercise: 1.1.4
+ * Description: Syntax Errors
+ * Compilation: javac EX_1_1_4.java
+ * ...
+ * 4 errors
  */
-
-/**
- * E1104
- */
-public class E1104 {
+public class EX_1_1_4 {
   public static void a() {
     int a = 5;
     int b = 4;
     int c;
 
-    if (a > b) then c = 0; // Syntax error
+    // Syntax error: commented for compiling
+    // if (a > b) then c = 0;
   }
 
   public static void b() {
@@ -22,7 +22,8 @@ public class E1104 {
     int b = 4;
     int c;
 
-    if a > b { c = 0; } // Syntax error
+    // Syntax error: commented for compiling
+    // if a > b { c = 0; }
   }
 
   public static void c() {
@@ -39,7 +40,8 @@ public class E1104 {
     int b = 4;
     int c;
 
-    if (a > b) c = 0 else b = 0; // Syntax error
+    // Syntax error: commented for compiling
+    // if (a > b) c = 0 else b = 0;
   }
 
   public static void main(String[] args) {

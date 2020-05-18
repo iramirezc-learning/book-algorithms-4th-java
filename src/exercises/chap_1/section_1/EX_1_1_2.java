@@ -1,20 +1,19 @@
 import edu.princeton.cs.algs4.StdOut;
 
 /**
- * Compilation: javac E1102.java
- * Execution: java E1102
+ * Exercise: 1.1.2
+ * Description: Data Types
+ * Compilation: javac EX_1_1_2.java
+ * Execution: java EX_1_1_2
+ * Example:
  *
- * $ java E1102
+ * $ java EX_1_1_2
  * a) (double) 1.618
  * b) (double) 10.0
  * c) (boolean) true
  * d) (int) 6
  */
-
-/**
- * E1102. Data Types
- */
-public class E1102 {
+public class EX_1_1_2 {
   public static void tellMeTheType(double val) {
     StdOut.println("(double) " + val);
   }
@@ -37,6 +36,5 @@ public class E1102 {
     tellMeTheType((4.1 >= 4));
     StdOut.print("d) ");
     tellMeTheType((1 + 2 + 3));
-
   }
 }

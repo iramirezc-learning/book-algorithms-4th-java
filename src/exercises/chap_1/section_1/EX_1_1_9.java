@@ -1,17 +1,16 @@
 import edu.princeton.cs.algs4.StdOut;
 
 /**
- * Compilation: javac E1109.java
- * Execution: java E1109 <number1>
+ * Exercise: 1.1.9
+ * Description: Integer to Binary String
+ * Compilation: javac EX_1_1_9.java
+ * Execution: java EX_1_1_9 <number1>
+ * Example(s):
  *
- * $ java E1109 15
+ * $ java EX_1_1_9 15
  * 15 -> 1111
  */
-
-/**
- * E1109. Integer to Binary String
- */
-public class E1109 {
+public class EX_1_1_9 {
   public static String toBinaryString(int n) {
     String s = "";
 

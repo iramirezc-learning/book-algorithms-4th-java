@@ -1,19 +1,18 @@
 import edu.princeton.cs.algs4.StdOut;
 
 /**
- * Compilation: javac E1108.java
- * Execution: java E1108
+ * Exercise: 1.1.8
+ * Description: String Concatenation
+ * Compilation: javac EX_1_1_8.java
+ * Execution: java EX_1_1_8
+ * Example(s):
  *
- * $ java E1108
+ * $ java EX_1_1_8
  * b
  * bc
  * e
  */
-
-/**
- * E1108
- */
-public class E1108 {
+public class EX_1_1_8 {
 
   public static void main(String[] args) {
     System.out.println("b");

@@ -16,7 +16,7 @@ import edu.princeton.cs.algs4.StdOut;
  * Not found: 367966
  *
  * BruteForceSearch Total Time:
- *  1124417.406646(ms) # 18.7 minutes!
+ *  1976516.199976(ms) # 32.94 minutes!
  * Not found: 367966
  */
 public class EX_1_1_38 {

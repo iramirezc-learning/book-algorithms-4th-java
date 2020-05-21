@@ -1,10 +1,13 @@
 import edu.princeton.cs.algs4.StdOut;
 
 /**
- * Compilation: javac E1119.java
- * Execution: java E1119
+ * Exercise: 1.1.19
+ * Description: Fibonacci Dynamic
+ * Compilation: javac EX_1_1_19.java
+ * Execution: java EX_1_1_19
+ * Example(s):
  *
- * $ java E1119
+ * $ java EX_1_1_19
  * fib(0) = 0
  * fib(1) = 1
  * fib(2) = 1
@@ -21,16 +24,14 @@ import edu.princeton.cs.algs4.StdOut;
  * ...
  * fib(89) = 1779979416004714189
  */
-
-/**
- * E1119. Fibonacci Dynamic
- */
-public class E1119 {
+public class EX_1_1_19 {
   public static long fibonacci(int n) {
     if (n == 0)
       return 0;
+
     if (n == 1)
       return 1;
+
     return fibonacci(n - 1) + fibonacci(n - 2);
   }
 

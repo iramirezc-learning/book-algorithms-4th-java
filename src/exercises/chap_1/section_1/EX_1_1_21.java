@@ -2,10 +2,13 @@ import edu.princeton.cs.algs4.StdIn;
 import edu.princeton.cs.algs4.StdOut;
 
 /**
- * Compilation: javac E1121.java
- * Execution: java E1121 < <input_stream>
+ * Exercise: 1.1.21
+ * Description: Table of names
+ * Compilation: javac EX_1_1_21.java
+ * Execution: java EX_1_1_21 < <input_stream>
+ * Example(s):
  *
- * $ java E1121 < ~/algs4-data/custom/names.txt
+ * $ java EX_1_1_21 < ~/algs4-data/custom/names.txt
  * java          10    10       1.000
  * c              8     4       2.000
  * haskell       10     2       5.000
@@ -13,11 +16,7 @@ import edu.princeton.cs.algs4.StdOut;
  * python         9     5       1.800
  * node           3     2       1.500
  */
-
-/**
- * E1121. Table of names
- */
-public class E1121 {
+public class EX_1_1_21 {
   public static void main(String[] args) {
     while (StdIn.hasNextLine()) {
       String[] line = StdIn.readLine().split("\\s+");

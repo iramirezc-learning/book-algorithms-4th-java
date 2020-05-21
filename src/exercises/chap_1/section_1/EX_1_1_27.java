@@ -1,30 +1,30 @@
 import edu.princeton.cs.algs4.StdOut;
 
 /**
- * Compilation: javac E1127.java
- * Execution: java E1127 <number1> <number2> <double>
+ * Exercise: 1.1.27
+ * Description: Binomial Distribution.
+ * Compilation: javac EX_1_1_27.java
+ * Execution: java EX_1_1_27 <number1> <number2> <double>
+ * Example(s):
  *
- * $ java E1127 2 2 0.5
+ * $ java EX_1_1_27 2 2 0.5
  * 0.25
  * Total calls: 13
  */
-
-/**
- * E1127. Binomial Distribution.
- */
-public class E1127 {
-
+public class EX_1_1_27 {
   public static int CALLS = 0;
 
   /* not optimal */
   public static double binomial(int n, int k, double p) {
     CALLS++;
-    StdOut.println(CALLS);
+    // StdOut.println(CALLS);
 
     if ((n == 0) && (k == 0))
       return 1.0;
+
     if ((n < 0) || (k < 0))
       return 0.0;
+
     return (1 - p) * binomial(n - 1, k, p) + p * binomial(n - 1, k - 1, p);
   }
 

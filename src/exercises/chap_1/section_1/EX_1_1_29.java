@@ -3,32 +3,32 @@ import edu.princeton.cs.algs4.In;
 import edu.princeton.cs.algs4.StdOut;
 
 /**
- * Compilation: javac E1129.java
- * Execution: java E1129 <input_file> <key>
+ * Exercise: 1.1.29
+ * Description: BinarySearch - Rank & Count
+ * Compilation: javac EX_1_1_29.java
+ * Execution: java EX_1_1_29 <input_file> <key>
+ * Example(s):
  *
- * $ java E1129 ~/algs4-data/custom/sorted.txt 5
+ * $ java EX_1_1_29 ~/algs4-data/custom/sorted.txt 5
  * Original array: [1, 2, 3, 4, 5, 5, 5, 6]
  * rank: 4
  * count: 3
  * 5 5 5
  *
- * $ java E1129 ~/algs4-data/custom/repeated.txt 5
+ * $ java EX_1_1_29 ~/algs4-data/custom/repeated.txt 5
  * Original array: [5, 5, 5, 5, 5, 5, 5, 5, 5, 5]
  * rank: 0
  * count: 10
- * 5 5 5 5 5 5 5 5 5 5
+ * 5 5 5 5 5 5 5 5 5 5 
  */
-
-/**
- * E1129. BinarySearch - Rank & Count
- */
-public class E1129 {
+public class EX_1_1_29 {
   public static int indexOf(int[] a, int key) {
     int lo = 0;
     int hi = a.length - 1;
 
     while (lo <= hi) {
       int mid = lo + (hi - lo) / 2;
+
       if (key < a[mid])
         hi = mid - 1;
       else if (key > a[mid])
@@ -36,6 +36,7 @@ public class E1129 {
       else
         return mid;
     }
+
     return -1;
   }
 
@@ -89,6 +90,7 @@ public class E1129 {
     if (args.length != 2) {
       throw new Error("You must provide the input file and integer key: <input_file> <key>");
     }
+
     In in = new In(args[0]);
     int key = Integer.parseInt(args[1]);
     int[] whitelist = in.readAllInts();
@@ -99,7 +101,6 @@ public class E1129 {
     int j = count(whitelist, key);
 
     StdOut.println("Original array: " + Arrays.toString(whitelist));
-
     StdOut.println("rank: " + i);
     StdOut.println("count: " + j);
 

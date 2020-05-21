@@ -1,21 +1,21 @@
 import java.util.Arrays;
-
-import javax.rmi.CORBA.StubDelegate;
-
 import edu.princeton.cs.algs4.In;
 import edu.princeton.cs.algs4.StdIn;
 import edu.princeton.cs.algs4.StdOut;
 
 /**
- * Compilation: javac E1123.java
- * Execution: java E1123 <whitelist_file> <operator> < <input_stream>
+ * Exercise: 1.1.23
+ * Description. Binary Search + (not in the whitelist) - (in the whitelist)
+ * Compilation: javac EX_1_1_23.java
+ * Execution: java EX_1_1_23 <whitelist_file> <operator> < <input_stream>
+ * Example(s):
  *
- * $ java E1123 ~/algs4-data/tinyW.txt + < ~/algs4-data/tinyT.txt
+ * $ java EX_1_1_23 ~/algs4-data/tinyW.txt + < ~/algs4-data/tinyT.txt
  * 50
  * 99
  * 13
  *
- * $ java E1123 ~/algs4-data/tinyW.txt - < ~/algs4-data/tinyT.txt
+ * $ java EX_1_1_23 ~/algs4-data/tinyW.txt - < ~/algs4-data/tinyT.txt
  * 23
  * 10
  * 18
@@ -32,12 +32,7 @@ import edu.princeton.cs.algs4.StdOut;
  * 77
  * 68
  */
-
-/**
- * E1123. Binary Search + (not in the whitelist) - (in the whitelist)
- */
-public class E1123 {
-
+public class EX_1_1_23 {
   public static int indexOf(int[] a, int target) {
     return indexOf(a, target, 0, a.length - 1);
   }
@@ -45,7 +40,9 @@ public class E1123 {
   public static int indexOf(int[] a, int target, int lo, int hi) {
     if (lo > hi)
       return -1;
+
     int mid = lo + (hi - lo) / 2;
+
     if (a[mid] > target) {
       return indexOf(a, target, lo, mid - 1);
     } else if (a[mid] < target) {
@@ -59,9 +56,9 @@ public class E1123 {
     if (args.length != 2) {
       throw new Error("You must provide the path to the whitelist and the control operator: <whitelist> <+/->");
     }
+
     In in = new In(args[0]);
     String sense = args[1];
-
     int[] whitelist = in.readAllInts();
 
     Arrays.sort(whitelist);
@@ -69,6 +66,7 @@ public class E1123 {
     while (!StdIn.isEmpty()) {
       int key = StdIn.readInt();
       int index = indexOf(whitelist, key);
+
       // not in the whitelist
       if (sense.equals("+") && index == -1) {
         StdOut.println(key);

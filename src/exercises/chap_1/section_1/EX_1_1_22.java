@@ -4,10 +4,13 @@ import edu.princeton.cs.algs4.StdIn;
 import edu.princeton.cs.algs4.StdOut;
 
 /**
- * Compilation: javac E1122.java
- * Execution: java E1122 <whitelist_file> < <input_stream>
+ * Exercise: 1.1.22
+ * Description: Binary Search - Recursive Implementation
+ * Compilation: javac EX_1_1_22.java
+ * Execution: java EX_1_1_22 <whitelist_file> < <input_stream>
+ * Example(s):
  *
- * $ java E1122 ~/algs4-data/tinyW.txt < ~/algs4-data/tinyT.txt
+ * $ java EX_1_1_22 ~/algs4-data/tinyW.txt < ~/algs4-data/tinyT.txt
  *   1) -> lo: 0   hi: 14
  *   2) -> lo: 0   hi: 6
  *    3) -> lo: 4   hi: 6
@@ -18,22 +21,21 @@ import edu.princeton.cs.algs4.StdOut;
  *      5) -> lo: 9   hi: 8
  * ...
  */
-
-/**
- * E1122. Binary Search - Recursive Implementation
- */
-public class E1122 {
+public class EX_1_1_22 {
   public static int indexOf(int[] a, int target) {
     return indexOf(a, target, 0, a.length - 1, 1);
   }
 
   public static int indexOf(int[] a, int target, int lo, int hi, int calls) {
     String format = "%" + calls + "s %d) -> lo: %-3d hi: %-3d\n";
+
     StdOut.printf(format, "", calls, lo, hi);
 
     if (lo > hi)
       return -1;
+
     int mid = lo + (hi - lo) / 2;
+
     if (a[mid] > target) {
       return indexOf(a, target, lo, mid - 1, ++calls);
     } else if (a[mid] < target) {
@@ -55,6 +57,7 @@ public class E1122 {
 
     while (!StdIn.isEmpty()) {
       int key = StdIn.readInt();
+
       if (indexOf(whitelist, key) == -1)
         StdOut.println(key);
     }

@@ -1,18 +1,17 @@
 import edu.princeton.cs.algs4.StdOut;
 
 /**
- * Compilation: javac E1126.java
- * Execution: java E1126
+ * Exercise 1.1.26
+ * Description: Testing Ascending Order
+ * Compilation: javac EX_1_1_26.java
+ * Execution: java EX_1_1_26
+ * Example(s):
  *
- * $ java E1126
+ * $ java EX_1_1_26
  * a: 1, b: 2, c: 3
  * ascending order? true
  */
-
-/**
- * E1126.
- */
-public class E1126 {
+public class EX_1_1_26 {
   public static void main(String[] args) {
     int a = 3;
     int b = 2;
@@ -24,11 +23,13 @@ public class E1126 {
       a = b;
       b = t;
     }
+
     if (a > c) {
       t = a;
       a = c;
       c = t;
     }
+
     if (b > c) {
       t = b;
       b = c;

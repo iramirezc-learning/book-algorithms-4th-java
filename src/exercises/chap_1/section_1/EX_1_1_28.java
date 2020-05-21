@@ -5,25 +5,25 @@ import edu.princeton.cs.algs4.StdIn;
 import edu.princeton.cs.algs4.StdOut;
 
 /**
- * Compilation: javac E1128.java
- * Execution: java E1128 <whitelist_file> < <input_stream>
+ * Exercise: 1.1.28
+ * Description: BinarySearch - Remove duplicates.
+ * Compilation: javac EX_1_1_28.java
+ * Execution: java EX_1_1_28 <whitelist_file> < <input_stream>
+ * Example(s):
  *
- * $ java E1128 ~/algs4-data/tinyW.txt < ~/algs4-data/tinyT.txt
+ * $ java EX_1_1_28 ~/algs4-data/tinyW.txt < ~/algs4-data/tinyT.txt
  * 50
  * 99
  * 13
  */
-
-/**
- * E1128. BinarySearch - Remove duplicates.
- */
-public class E1128 {
+public class EX_1_1_28 {
   public static int indexOf(int[] a, int key) {
     int lo = 0;
     int hi = a.length - 1;
 
     while (lo <= hi) {
       int mid = lo + (hi - lo) / 2;
+
       if (key < a[mid])
         hi = mid - 1;
       else if (key > a[mid])
@@ -31,6 +31,7 @@ public class E1128 {
       else
         return mid;
     }
+
     return -1;
   }
 
@@ -43,6 +44,8 @@ public class E1128 {
     int[] whitelist = in.readAllInts();
 
     Arrays.sort(whitelist);
+
+    // StdOut.println(whitelist.length);
 
     // save indexes of duplicated values
     ArrayList<Integer> duplicateIndexes = new ArrayList<Integer>();
@@ -63,8 +66,11 @@ public class E1128 {
       }
     }
 
+    // StdOut.println(uniqueWhitelist.length);
+
     while (!StdIn.isEmpty()) {
       int key = StdIn.readInt();
+
       if (indexOf(uniqueWhitelist, key) == -1)
         StdOut.println(key);
     }

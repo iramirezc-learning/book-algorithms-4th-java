@@ -3,37 +3,23 @@ import edu.princeton.cs.algs4.StdOut;
 import edu.princeton.cs.algs4.StdRandom;
 
 /**
- * Compilation: javac E1137.java
- * Execution: java E1137 <m> <n>
+ * Exercise: 1.1.36
+ * Description: ShuffleTest: Empirical shuffle check
+ * Compilation: javac EX_1_1_36.java
+ * Execution: java EX_1_1_36 <m> <n>
+ * Example(s):
  *
- * $ java E1137 5 1000
- * Initial array: [0, 1, 2, 3, 4]
- * 
+ * $ java EX_1_1_36 5 1000
  * Shuffle Check:
- * [188, 211, 175, 199, 227]
- * [198, 198, 223, 194, 187]
- * [197, 209, 197, 184, 213]
- * [193, 191, 200, 232, 184]
- * [224, 191, 205, 191, 189]
- *
+ * [199, 199, 193, 222, 187]
+ * [204, 225, 181, 176, 214]
+ * [179, 188, 224, 196, 213]
+ * [203, 196, 187, 215, 199]
+ * [215, 192, 215, 191, 187]
+ * 
  * n/m: 200.000000
  */
-
-/**
- * E1137. Bad shuffling
- */
-public class E1137 {
-  public static void badShuffle(int[] a) {
-    int n = a.length;
-
-    for (int i = 0; i < n; i++) {
-      int r = StdRandom.uniform(n);
-      int temp = a[i];
-      a[i] = a[r];
-      a[r] = temp;
-    }
-  }
-
+public class EX_1_1_36 {
   public static String printMatrix(int[][] a) {
     int n = a.length;
     String s = "";
@@ -56,31 +42,25 @@ public class E1137 {
   }
 
   public static void checkShuffle(int[][] table, int[] shuffled) {
-    for (int i = 0; i < table.length; i++) {
-      for (int j = 0; j < shuffled.length; j++) {
-        if (shuffled[j] == i) {
-          table[i][j]++;
-        }
-      }
+    for (int j = 0; j < shuffled.length; j++) {
+      table[shuffled[j]][j]++;
     }
   }
 
-  public static void main(String[] args) {
+  public static void main(String[] args) throws Exception {
     if (args.length != 2) {
       throw new Error("You must provide two integers: <m> <n>");
     }
 
     int m = Integer.parseInt(args[0]);
     int n = Integer.parseInt(args[1]);
-
-    int[] array = createArray(m);
     int[][] table = new int[m][m];
 
-    StdOut.println("Initial array: " + Arrays.toString(array) + "\n");
-
-    // BAD shuffle array `n` times
+    // shuffle array `n` times
     for (int i = 1; i <= n; i++) {
-      badShuffle(array);
+      int[] array = createArray(m);
+
+      StdRandom.shuffle(array);
       // StdOut.println("Shuffle " + i + ": " + Arrays.toString(array) + "\n");
       checkShuffle(table, array);
     }

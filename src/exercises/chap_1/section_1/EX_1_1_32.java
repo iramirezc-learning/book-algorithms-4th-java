@@ -4,18 +4,17 @@ import java.awt.Color;
 import java.util.Arrays;
 
 /**
- * Compilation: javac E1132.java
- * Execution: java E1132 <int_intervals> <double_low> <double_high> < <input_file>
+ * Exercise: 1.1.32
+ * Description: Histogram Drawing
+ * Compilation: javac EX_1_1_32.java
+ * Execution: java EX_1_1_32 <int_intervals> <double_low> <double_high> < <input_file>
+ * Example(s):
  *
- * $ java E1132 10 0 1000 < ~/algs4-data/custom/doubles.txt
+ * $ java EX_1_1_32 10 0 1000 < ~/algs4-data/custom/doubles.txt
  * Histogram: [112, 98, 78, 100, 99, 118, 104, 104, 99, 88]
  * Max: 118.0 Interval Size: 100.0
  */
-
-/**
- * E1132
- */
-public class E1132 {
+public class EX_1_1_32 {
   public static Color[] COLORS = { StdDraw.MAGENTA, StdDraw.GREEN, StdDraw.BLUE, StdDraw.RED };
 
   public static void plotValues(int[] h, double yMax) {
@@ -26,6 +25,7 @@ public class E1132 {
       double x1 = (1.0 * i / n) + xWidth;
       double y1 = h[i] / (yMax * 2);
       double y2 = h[i] / (yMax * 2);
+
       StdDraw.setPenColor(COLORS[i % 4]);
       StdDraw.filledRectangle(x1, y1, xWidth, y2);
     }
@@ -44,18 +44,17 @@ public class E1132 {
     hi = Math.max(lo, hi);
 
     double range = hi - lo;
-
     double intervalSize = range / n;
-
     int[] histogram = new int[n];
-
     double yMax = 0.0;
 
     while (!StdIn.isEmpty()) {
       double number = StdIn.readDouble();
+
       if (number >= lo && number <= hi) {
         for (int i = 0; i < n; i++) {
           double limit = lo + intervalSize * (i + 1);
+
           if (number > limit) {
             continue;
           } else {

@@ -3,21 +3,20 @@ import edu.princeton.cs.algs4.StdOut;
 import edu.princeton.cs.algs4.StdRandom;
 
 /**
- * Compilation: javac E1131.java
- * Execution: java E1131 <n> <p>
- *
- * $ java E1131 10 0.5
- * 
+ * Exercise: 1.1.31
+ * Description: Random connections Drawing.
  * Reference:
  * - https://introcs.cs.princeton.edu/java/stdlib/javadoc/StdDraw.html
  * - https://stackoverflow.com/questions/18610350/android-dividing-circle-into-n-equal-parts-and-know-the-coordinates-of-each-divi
  * - https://github.com/aistrate/AlgorithmsSedgewick/blob/master/1-Fundamentals/1-1-BasicProgModel/Ex_1_1_31.java
+ *
+ * Compilation: javac EX_1_1_31.java
+ * Execution: java EX_1_1_31 <n> <p>
+ * Example(s):
+ *
+ * $ java EX_1_1_31 10 0.5
  */
-
-/**
- * E1131. Random connections.
- */
-public class E1131 {
+public class EX_1_1_31 {
   public static void drawRandomConnections(int n, double p) {
     double[] pointsX = new double[n];
     double[] pointsY = new double[n];
@@ -30,7 +29,6 @@ public class E1131 {
     StdDraw.setScale(-0.05, 1.05);
     // Pen Radius
     StdDraw.setPenRadius(0.05);
-
     // set the pen color to Green
     StdDraw.setPenColor(StdDraw.GREEN);
 

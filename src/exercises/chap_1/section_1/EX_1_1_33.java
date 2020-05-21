@@ -1,10 +1,13 @@
 import java.util.Arrays;
 
 /**
- * Compilation: javac E1133.java
- * Execution: java E1133
+ * Exercise: 1.1.33
+ * Description: Matrix Library
+ * Compilation: javac EX_1_1_33.java
+ * Execution: java EX_1_1_33
+ * Example(s):
  *
- * $ java E1133
+ * $ java EX_1_1_33
  * dot:
  * 122.0
  * 
@@ -32,11 +35,7 @@ import java.util.Arrays;
  * mult (vector-matrix):
  * [13.0, 31.0, 49.0]
  */
-
-/**
- * E1133. Matrix Library
- */
-public class E1133 {
+public class EX_1_1_33 {
   public static String printMatrix(double[][] a) {
     int n = a.length;
     String s = "";
@@ -132,6 +131,7 @@ public class E1133 {
 
     double[][] a = { { 0, 4, -2 }, { -4, -3, 0 } };
     double[][] b = { { 0, 1 }, { 1, -1 }, { 2, 3 } };
+
     System.out.println("mult (matrix-matrix):\n" + printMatrix(mult(a, b)));
     // [
     //    [0.0, -10.0],
@@ -140,6 +140,7 @@ public class E1133 {
 
     a = new double[][] { { 1, 2, 3 }, { 4, 5, 6 } };
     b = new double[][] { { 1, 2 }, { 3, 4 }, { 5, 6 } };
+
     System.out.println("mult (matrix-matrix) 2:\n" + printMatrix(mult(a, b)));
     // [
     //    [22.0, 28.0],
@@ -154,6 +155,7 @@ public class E1133 {
     // ]
 
     a = new double[][] { { 1, 2, 3 }, { 4, 5, 6 }, { 7, 8, 9 } };
+
     System.out.println("transpose:\n" + printMatrix(transpose(a)));
     // [
     //   [1.0, 4.0, 7.0],
@@ -163,11 +165,13 @@ public class E1133 {
 
     a = new double[][] { { 1, -1, 2 }, { 0, -3, 1 } };
     x = new double[] { 2, 1, 0 };
+
     System.out.println("mult (matrix-vector):\n" + printMatrix(mult(a, x)) + "\n");
     // [1.0, -3.0]
 
     a = new double[][] { { 1, 2, 3 }, { 4, 5, 6 }, { 7, 8, 9 } };
     y = new double[] { 2, 1, 3 };
+
     System.out.println("mult (vector-matrix):\n" + printMatrix(mult(y, a)));
     // [13, 31, 49]
   }

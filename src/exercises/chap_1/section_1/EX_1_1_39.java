@@ -3,21 +3,20 @@ import edu.princeton.cs.algs4.StdRandom;
 import java.util.Arrays;
 
 /**
- * Compilation: javac E1139.java
- * Execution: java E1139 <trials>
+ * Exercise 1.1.39
+ * Description: Duplicated Keys with BS
+ * Compilation: javac EX_1_1_39.java
+ * Execution: java EX_1_1_39 <trials>
+ * Example(s):
  *
- * $ java E1139 100
+ * $ java EX_1_1_39 100
  * Trials: 100
  * n:      1000 Total findings:       104 Average:         1
  * n:     10000 Total findings:     10978 Average:       109
  * n:    100000 Total findings:   1051252 Average:     10512
  * n:   1000000 Total findings:  67072495 Average:    670724
  */
-
-/**
- * E1139
- */
-public class E1139 {
+public class EX_1_1_39 {
   public static int binarySearch(int[] a, int key) {
     int lo = 0;
     int hi = a.length - 1;
@@ -64,8 +63,10 @@ public class E1139 {
       // run trials for n
       for (int i = 1; i <= trials; i++) {
         int[] a1 = generateArray(nMin);
-        Arrays.sort(a1);
         int[] a2 = generateArray(nMin);
+
+        Arrays.sort(a1);
+
         // run binarySearch
         for (int key = 0; key < a2.length; key++) {
           if (binarySearch(a1, a2[key]) >= 0) {
@@ -76,6 +77,7 @@ public class E1139 {
 
       // print results
       int average = findings / trials;
+
       StdOut.printf("n: %9d Total findings: %9d Average: %9d\n", nMin, findings, average);
       // go to next value for `n`
       nMin = nMin * 10;

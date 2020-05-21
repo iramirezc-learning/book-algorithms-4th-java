@@ -3,10 +3,14 @@ import edu.princeton.cs.algs4.StdOut;
 import edu.princeton.cs.algs4.StdRandom;
 
 /**
- * Compilation: javac E1135.java
- * Execution: java E1135 <n_simulations>
+ * Exercise: 1.1.35
+ * TODO: fix this exercise as is incorrect!
+ * Description: Dice Simulation
+ * Compilation: javac EX_1_1_35.java
+ * Execution: java EX_1_1_35 <n_simulations>
+ * Example(s):
  *
- * $ java E1135 999999
+ * $ java EX_1_1_35 999999
  * Exact Probability:
  * Dice Sum:   0   Freq:  0        P: 0.000
  * Dice Sum:   1   Freq:  0        P: 0.000
@@ -24,11 +28,7 @@ import edu.princeton.cs.algs4.StdRandom;
  * 
  * Min Throws: 35
  */
-
-/**
- * E1135. Dice Simulation
- */
-public class E1135 {
+public class EX_1_1_35 {
   public static int SIDES = 6;
 
   public static int[] calculateFrequencies() {
@@ -69,6 +69,7 @@ public class E1135 {
     for (int i = 0; i < f.length; i++) {
       StdOut.printf("Dice Sum: %3d\tFreq: %2d\tP: %.3f\n", i, f[i], p[i]);
     }
+
     StdOut.println();
   }
 
@@ -84,13 +85,10 @@ public class E1135 {
       int dice1 = throwDice();
       int dice2 = throwDice();
       int sum = dice1 + dice2;
+
       frequencies[sum]++;
       nThrows++;
     } while (!isAMatch(calculateProbability(frequencies), exactProbability));
-
-    // StdOut.println("Simulation:");
-    // printFrequencyAndProbability(frequencies, calculateProbability(frequencies));
-    // StdOut.println("Total throws: " + nThrows);
 
     return nThrows;
   }
@@ -99,6 +97,7 @@ public class E1135 {
     if (args.length != 1) {
       throw new Error("You must provide the number of simulations");
     }
+
     int simulations = Integer.parseInt(args[0]);
     int minThrows = 1000;
     int[] exactFrequency = calculateFrequencies();

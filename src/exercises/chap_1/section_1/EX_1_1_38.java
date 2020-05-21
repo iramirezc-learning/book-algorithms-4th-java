@@ -4,24 +4,22 @@ import edu.princeton.cs.algs4.StdIn;
 import edu.princeton.cs.algs4.StdOut;
 
 /**
- * Compilation: javac E1138.java
- * Execution: java E1138 <whitelist> <input_data>
+ * Exercise: 1.1.38
+ * Description: BinarySearch vs BruteForceSearch
+ * Compilation: javac EX_1_1_38.java
+ * Execution: java EX_1_1_38 <whitelist> <input_data>
+ * Example(s):
  *
- * $ java E1138 ~/algs4-data/largeW.txt ~/algs4-data/largeT.txt
- * BruteForceSearch Total Time:
- *  1124417.406646(ms) = 18.7 minutes!
- * Not found: 367966
- * 
+ * $ java EX_1_1_38 ~/algs4-data/largeW.txt ~/algs4-data/largeT.txt
  * BinarySearch Total Time:
- *  2619.593394(ms) = 2.6 seconds
+ *  2571.719616(ms) # 2.5 seconds
+ * Not found: 367966
+ *
+ * BruteForceSearch Total Time:
+ *  1124417.406646(ms) # 18.7 minutes!
  * Not found: 367966
  */
-
-/**
- * E1138. BinarySearch vs BruteForceSearch
- */
-public class E1138 {
-
+public class EX_1_1_38 {
   public static int binarySearch(int[] a, int key) {
     int lo = 0;
     int hi = a.length - 1;
@@ -44,18 +42,20 @@ public class E1138 {
     for (int i = 0; i < a.length; i++)
       if (a[i] == key)
         return i;
+
     return -1;
   }
 
   public static void runBFS(int[] whitelist, int[] data) {
     int notFound = 0;
-
     long start = System.nanoTime();
+
     for (int i = 0; i < data.length; i++) {
       if (bruteForceSearch(whitelist, data[i]) == -1) {
         notFound++;
       }
     }
+
     long end = System.nanoTime();
     double totalTimeInMS = (end - start) / (double) 1000000;
 
@@ -66,14 +66,16 @@ public class E1138 {
 
   public static void runBS(int[] whitelist, int[] data) {
     int notFound = 0;
-
     long start = System.nanoTime();
+
     Arrays.sort(whitelist);
+
     for (int i = 0; i < data.length; i++) {
       if (binarySearch(whitelist, data[i]) == -1) {
         notFound++;
       }
     }
+
     long end = System.nanoTime();
     double totalTimeInMS = (end - start) / (double) 1000000;
 
@@ -92,7 +94,7 @@ public class E1138 {
     int[] whitelist = whitelistFile.readAllInts();
     int[] data = dataFile.readAllInts();
 
-    runBFS(whitelist, data);
     runBS(whitelist, data);
+    runBFS(whitelist, data);
   }
 }

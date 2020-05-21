@@ -2,11 +2,15 @@ import edu.princeton.cs.algs4.StdOut;
 import edu.princeton.cs.algs4.StdRandom;
 
 /**
+ * RandomSeq
  * Type: Snippet
  * Description: Sample StdOut client.
+ * Chapter: 1
+ * Section: 1
  * Ref: p. 37
  * Compilation: javac RandomSeq.java
  * Execution: java RandomSeq <numbers> <lo> <hi>
+ * Example(s):
  *
  * $ java RandomSeq 5 100.0 200.0
  * 155.24
@@ -15,12 +19,7 @@ import edu.princeton.cs.algs4.StdRandom;
  * 122.01
  * 117.86
  */
-
-/**
- * RandomSeq
- */
 public class RandomSeq {
-
   public static void main(String[] args) {
     int n = Integer.parseInt(args[0]);
     double lo = Double.parseDouble(args[1]);
@@ -28,6 +27,7 @@ public class RandomSeq {
 
     for (int i = 0; i < n; i++) {
       double x = StdRandom.uniform(lo, hi);
+
       StdOut.printf("%.2f\n", x);
     }
   }

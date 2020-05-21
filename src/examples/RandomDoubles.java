@@ -2,14 +2,13 @@ import edu.princeton.cs.algs4.Out;
 import edu.princeton.cs.algs4.StdRandom;
 
 /**
+ * RandomDoubles
+ * Description: Create a file with `n` random doubles
  * Compilation: javac RandomDoubles.java
  * Execution: java RandomDoubles <output_file> <max_numbers>
+ * Example(s):
  *
  * $ java RandomDoubles ~/algs4-data/custom/doubles.txt 1000
- */
-
-/**
- * RandomDoubles
  */
 public class RandomDoubles {
   public static void main(String[] args) {
@@ -23,6 +22,7 @@ public class RandomDoubles {
     for (int i = 1; i <= n; i++) {
       out.println(StdRandom.uniform(0.0, n));
     }
+
     out.close();
   }
 }

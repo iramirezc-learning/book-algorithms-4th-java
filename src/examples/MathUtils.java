@@ -1,11 +1,15 @@
 import edu.princeton.cs.algs4.StdOut;
 
 /**
+ * MathUtils
  * Type: Snippet
  * Description: Typical implementations of static methods.
+ * Chapter: 1
+ * Section: 1
  * Ref: p. 23
  * Compilation: javac MathUtils.java
  * Execution: java MathUtils
+ * Example(s):
  *
  * $ java MathUtils
  * abs(-9): 9
@@ -15,12 +19,7 @@ import edu.princeton.cs.algs4.StdOut;
  * hypotenuse(3.0, 5.0): 5.830951894845301
  * harmonic(5): 2.283333333333333
  */
-
-/**
- * MathUtils
- */
 public class MathUtils {
-
   // absolute value of a int value
   public static int abs(int x) {
     if (x < 0)

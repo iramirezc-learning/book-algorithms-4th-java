@@ -2,11 +2,15 @@ import edu.princeton.cs.algs4.StdOut;
 import java.util.Arrays;
 
 /**
+ * ArraysUtils
  * Type: Snippet
  * Description: Typical array-processing code.
+ * Chapter: 1
+ * Section: 1
  * Ref: p. 21
  * Compilation: javac ArraysUtils.java
  * Execution: java ArraysUtils
+ * Example(s):
  *
  * $ java ArraysUtils
  * Array a)
@@ -24,18 +28,16 @@ import java.util.Arrays;
  * [66.0, 81.0, 96.0]
  * [102.0, 126.0, 150.0]
  */
-
-/**
- * ArraysUtils
- */
 public class ArraysUtils {
   public static double findMax(double[] a) {
     double max = a[0];
+
     for (int i = 1; i < a.length; i++) {
       if (a[i] > max) {
         max = a[i];
       }
     }
+
     return max;
   }
 
@@ -67,6 +69,7 @@ public class ArraysUtils {
 
     for (int i = 0; i < n / 2; i++) {
       double temp = a[i];
+
       a[i] = a[n - i - 1];
       a[n - i - 1] = temp;
     }
@@ -103,6 +106,7 @@ public class ArraysUtils {
   public static void main(String[] args) {
     double[] numbers = { 1, 2, 3, 4, 5 };
     double[] copyNumbers = copy(numbers);
+
     copyNumbers[4] = 6;
 
     StdOut.println("Array a)");
@@ -117,8 +121,9 @@ public class ArraysUtils {
     StdOut.println("reversed: " + Arrays.toString(reverse(copyNumbers)));
     StdOut.println();
 
-    StdOut.println("Matrix Multiplication:");
     double[][] a = { { 1, 2, 3 }, { 4, 5, 6 }, { 7, 8, 9 } };
+
+    StdOut.println("Matrix Multiplication:");
     StdOut.println(printMatrix(squareMatrixMultiplication(a, a)));
   }
 }

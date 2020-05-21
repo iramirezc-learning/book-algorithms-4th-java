@@ -1,6 +1,5 @@
 if [ -z "$1" ]
 then
-  rm ../../../../classes/*.class
   javac -d ../../../../classes *.java
 else
   javac -d ../../../../classes $1

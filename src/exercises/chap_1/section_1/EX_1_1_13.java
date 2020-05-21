@@ -2,10 +2,13 @@ import edu.princeton.cs.algs4.StdOut;
 import edu.princeton.cs.algs4.StdRandom;
 
 /**
- * Compilation: javac E1113.java
- * Execution: java E1113 <rows> <cols>
+ * Exercise: 1.1.13
+ * Description: Transposes a bi-dimensional array.
+ * Compilation: javac EX_1_1_13.java
+ * Execution: java EX_1_1_13 <rows> <cols>
+ * Example(s):
  *
- * $ java E1113 2 3
+ * $ java EX_1_1_13 2 3
  * Original ->
  *     5    3    4
  *     5    3    4
@@ -14,11 +17,7 @@ import edu.princeton.cs.algs4.StdRandom;
  *     3    3
  *     4    4
  */
-
-/**
- * E1113. Transposes a bidimensional array.
- */
-public class E1113 {
+public class EX_1_1_13 {
   public static int[][] createTable(int rows, int cols) {
     int[][] table = new int[rows][cols];
 
@@ -36,6 +35,7 @@ public class E1113 {
       for (int j = 0; j < a[i].length; j++) {
         StdOut.printf("%5d", a[i][j]);
       }
+
       StdOut.println();
     }
   }

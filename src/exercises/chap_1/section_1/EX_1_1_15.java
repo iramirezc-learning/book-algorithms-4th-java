@@ -3,19 +3,18 @@ import edu.princeton.cs.algs4.StdOut;
 import java.util.Arrays;
 
 /**
- * Compilation: javac E1115.java
- * Execution: java E1115 <size>
+ * Exercise: 1.1.15
+ * Description: Histogram.
+ * Compilation: javac EX_1_1_15.java
+ * Execution: java EX_1_1_15 <size>
+ * Example(s):
  *
- * $ java E1115 5
+ * $ java EX_1_1_15 5
  * Array: [3, 3, 4, 0, 1]
  * Histogram: [1, 1, 0, 2, 1]
  * a.length : 5, sumHistogram : 5
  */
-
-/**
- * E1115. Histogram.
- */
-public class E1115 {
+public class EX_1_1_15 {
   public static int[] createRandomArray(int n) {
     int[] a = new int[n];
 
@@ -29,13 +28,8 @@ public class E1115 {
   public static int[] histogram(int[] a, int m) {
     int[] h = new int[m];
 
-    for (int i = 0; i < h.length; i++) {
-      int sum = 0;
-      for (int j = 0; j < a.length; j++) {
-        if (a[j] == i)
-          sum++;
-      }
-      h[i] = sum;
+    for (int j = 0; j < a.length; j++) {
+      h[a[j]]++;
     }
 
     return h;
@@ -57,11 +51,8 @@ public class E1115 {
     }
 
     int size = Integer.parseInt(args[0]);
-
     int[] a = createRandomArray(size);
-
     int[] h = histogram(a, size);
-
     int sumH = sumHistogram(h);
 
     StdOut.println("Array: " + Arrays.toString(a));

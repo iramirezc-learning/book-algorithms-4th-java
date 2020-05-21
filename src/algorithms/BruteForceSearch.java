@@ -3,20 +3,20 @@ import edu.princeton.cs.algs4.StdIn;
 import edu.princeton.cs.algs4.StdOut;
 
 /**
+ * BruteForceSearch
  * Type: Algorithm
  * Description: Returns the index of the 'key' in the array 'a'.
+ * Chapter: 1
+ * Section: 1
  * Ref: p. 48
  * Compilation: javac BruteForceSearch.java
  * Execution: java BruteForceSearch <whitelist_file> < <input_file> | more
+ * Example(s):
  *
  * $ java BruteForceSearch ~/algs4-data/tinyW.txt < ~/algs4-data/tinyT.txt | more
  * 50
  * 99
  * 13
- */
-
-/**
- * BruteForceSearch
  */
 public class BruteForceSearch {
 
@@ -24,6 +24,7 @@ public class BruteForceSearch {
     for (int i = 0; i < a.length; i++)
       if (a[i] == key)
         return i;
+
     return -1;
   }
 
@@ -37,6 +38,7 @@ public class BruteForceSearch {
 
     while (!StdIn.isEmpty()) {
       int key = StdIn.readInt();
+
       if (indexOf(whitelist, key) == -1)
         StdOut.println(key);
     }

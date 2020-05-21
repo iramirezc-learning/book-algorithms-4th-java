@@ -1,0 +1,6 @@
+if [ -z "$1" ]
+then
+  javac -d ../../classes *.java
+else
+  javac -d ../../classes $1
+fi

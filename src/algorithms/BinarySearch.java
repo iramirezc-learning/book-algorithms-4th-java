@@ -4,20 +4,20 @@ import edu.princeton.cs.algs4.StdIn;
 import edu.princeton.cs.algs4.StdOut;
 
 /**
+ * BinarySearch
  * Type: Algorithm
  * Description: Returns the index of the 'key' in the array 'a'.
+ * Chapter: 1
+ * Section: 1
  * Ref: Recursive p. 25, p. 47
  * Compilation: javac BinarySearch.java
  * Execution: java BinarySearch <whitelist_file> < <input_file> | more
+ * Example(s):
  *
  * $ java BinarySearch ~/algs4-data/tinyW.txt < ~/algs4-data/tinyT.txt | more
  * 50
  * 99
  * 13
- */
-
-/**
- * BinarySearch
  */
 public class BinarySearch {
   public static int indexOf(int[] a, int key) {
@@ -26,6 +26,7 @@ public class BinarySearch {
 
     while (lo <= hi) {
       int mid = lo + (hi - lo) / 2;
+
       if (key < a[mid])
         hi = mid - 1;
       else if (key > a[mid])
@@ -33,6 +34,7 @@ public class BinarySearch {
       else
         return mid;
     }
+
     return -1;
   }
 
@@ -42,7 +44,9 @@ public class BinarySearch {
   public static int indexOf(int[] a, int key, int lo, int hi) {
     if (lo > hi)
       return -1;
+
     int mid = lo + (hi - lo) / 2;
+
     if (key < a[mid])
       return indexOf(a, key, lo, mid - 1);
     if (key > a[mid])

@@ -1,0 +1,8 @@
+if [ -z "$1" ]
+then
+  javac -d $MY_CLASSES -cp $CLASSPATH ./adts/*.java
+  javac -d $MY_CLASSES -cp $CLASSPATH ./algorithms/*.java
+  javac -d $MY_CLASSES -cp $CLASSPATH ./examples/*.java
+else
+  javac -d $MY_CLASSES -cp $CLASSPATH $1
+fi

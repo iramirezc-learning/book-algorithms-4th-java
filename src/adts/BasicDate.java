@@ -13,7 +13,7 @@ import edu.princeton.cs.algs4.StdOut;
  *
  * $ java BasicDate 9 27 1987
  * new BasicDate(9, 27, 1987): 9/27/1987
- * new BasicDate(9/27/1987): 9/27/1987
+ * new BasicDate('9/27/1987'): 9/27/1987
  *
  * equals()
  * Is 9/27/1987 equals to 9/27/1987? true
@@ -86,22 +86,22 @@ public class BasicDate implements Comparable<BasicDate> {
   }
 
   public int compareTo(BasicDate that) {
-    if (this.year > that.year)
+    if (this.year() > that.year())
       return +1;
 
-    if (this.year < that.year)
+    if (this.year() < that.year())
       return -1;
 
-    if (this.month > that.month)
+    if (this.month() > that.month())
       return +1;
 
-    if (this.month < that.month)
+    if (this.month() < that.month())
       return -1;
 
-    if (this.day > that.day)
+    if (this.day() > that.day())
       return +1;
 
-    if (this.day < that.day)
+    if (this.day() < that.day())
       return -1;
 
     return 0;
@@ -119,7 +119,7 @@ public class BasicDate implements Comparable<BasicDate> {
     BasicDate yourDate = new BasicDate(m, d, y);
 
     StdOut.println("new BasicDate(" + m + ", " + d + ", " + y + "): " + yourDate);
-    StdOut.println("new BasicDate(" + yourDate.toString() + "): " + new BasicDate(yourDate.toString()));
+    StdOut.println("new BasicDate('" + yourDate.toString() + "'): " + new BasicDate(yourDate.toString()));
 
     BasicDate date = new BasicDate(9, 27, 1987);
 

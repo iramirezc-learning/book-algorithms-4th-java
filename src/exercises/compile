@@ -1,6 +1,6 @@
 if [ -z "$1" ]
 then
-  javac -d $MY_CLASSES -cp $CLASSPATH ./chap_1/section_1/*.java
+  javac -d $MY_CLASSPATH -cp $CLASSPATH ./chap_1/section_1/*.java
 else
-  javac -d $MY_CLASSES -cp $CLASSPATH $1
+  javac -d $MY_CLASSPATH -cp $CLASSPATH $1
 fi

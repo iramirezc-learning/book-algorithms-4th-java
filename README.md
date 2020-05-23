@@ -21,7 +21,7 @@ Follow these instructions ["Installing the textbook libraries"](https://algs4.cs
 
 ### For Mac OS X and `.zshrc`
 
-Download  `algs4.jar` file to folder `~/algs4`
+Download  `algs4.jar` file to your classes folder like: `~/algs4` (or any other folder of your preference).
 
 Edit `~/.zprofile` file:
 
@@ -32,7 +32,8 @@ sudo vim ~/.zprofile
 Add the following line and save:
 
 ```txt
-export CLASSPATH=$CLASSPATH:~/algs4/algs4.jar
+export MY_CLASSPATH=~/algs4
+export CLASSPATH=$CLASSPATH:$MY_CLASSPATH/algs4.jar:$MY_CLASSPATH
 ```
 
 Do NOT forget to include the imports you need in your code:

@@ -1,5 +1,8 @@
+# folders
 .idea
 .vscode
-*.log
-*.class
+classes
 out
+
+# files
+*.log

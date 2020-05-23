@@ -3,18 +3,16 @@ import edu.princeton.cs.algs4.StdOut;
 import edu.princeton.cs.algs4.StdRandom;
 
 /**
+ * VisualAccumulator
  * Type: ADT
  * Description: An abstract data type for accumulating data values (visual version).
  * Ref: p. 95
  * Compilation: javac VisualAccumulator.java
  * Execution: java VisualAccumulator <trial>
+ * Example(s):
  *
  * $ java VisualAccumulator 2000
  * Mean (2000 values): 0.509789
- */
-
-/**
- * VisualAccumulator
  */
 public class VisualAccumulator {
   private double sum;
@@ -41,11 +39,11 @@ public class VisualAccumulator {
 
   public String toString() {
     String s = "Mean (" + n + " values): ";
+
     return s + String.format("%7.5f", mean());
   }
 
   public static void main(String[] args) {
-    // Ref: TestVisualAccumulator p. 95
     int trials = Integer.parseInt(args[0]);
     VisualAccumulator a = new VisualAccumulator(trials, 1.0);
 

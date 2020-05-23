@@ -2,18 +2,18 @@ import edu.princeton.cs.algs4.StdOut;
 import edu.princeton.cs.algs4.StdRandom;
 
 /**
+ * Accumulator
  * Type: ADT
  * Description: An abstract data type for accumulation data values.
+ * Chapter: 1
+ * Section: 2
  * Ref: p. 93
  * Compilation: javac Accumulator.java
  * Execution: java Accumulator <trials>
+ * Example(s):
  *
  * $ java Accumulator 1000
  * Mean (1000 values): 0.49295
- */
-
-/**
- * Accumulator
  */
 public class Accumulator {
   private double sum;
@@ -30,6 +30,7 @@ public class Accumulator {
 
   public String toString() {
     String s = "Mean (" + n + " values): ";
+
     return s + String.format("%7.5f", mean());
   }
 

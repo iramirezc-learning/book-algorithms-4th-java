@@ -3,32 +3,31 @@ import edu.princeton.cs.algs4.StdOut;
 import java.util.Arrays;
 
 /**
+ * StringUtils
  * Type: Snippet
  * Description: Typical string-processing code
+ * Chapter: 1
+ * Section: 2
  * Ref: p. 81
- *
  * Compilation: javac StringUtils.java
  * Execution: java StringUtils < ~/algs4-data/custom/cats.txt
+ * Example(s):
  *
  * $ java StringUtils
  * isPalindrome('abc'): false
  * isPalindrome('aba'): true
- * 
+ *
  * getFileName('meme.jpg'): meme
  * getExtensionName('meme.jpg'): jpg
  *
  * filterBy('cat'):
  * cats are awesome
  * cats will dominate the world
- * 
+ *
  * getWords('Cats  are  so  cute'): [Cats, are, so, cute]
- * 
+ *
  * isSorted(['animal', 'boat', 'car']): true
  * isSorted(['boat', 'car', 'animal']): false
- */
-
-/**
- * StringUtils
  */
 public class StringUtils {
   /**
@@ -36,11 +35,13 @@ public class StringUtils {
    */
   public static boolean isPalindrome(String s) {
     int n = s.length();
+
     for (int i = 0; i < n / 2; i++) {
       if (s.charAt(i) != s.charAt(n - 1 - i)) {
         return false;
       }
     }
+
     return true;
   }
 
@@ -71,6 +72,7 @@ public class StringUtils {
   public static void filterBy(String query) {
     while (!StdIn.isEmpty()) {
       String s = StdIn.readLine();
+
       if (s.contains(query)) {
         StdOut.println(s);
       }
@@ -82,6 +84,7 @@ public class StringUtils {
    */
   public static String[] getWords(String text) {
     String[] words = text.split("\\s+");
+
     return words;
   }
 
@@ -93,6 +96,7 @@ public class StringUtils {
       if (a[i - 1].compareTo(a[i]) > 0)
         return false;
     }
+
     return true;
   }
 
@@ -114,6 +118,7 @@ public class StringUtils {
 
     String[] sorted = { "animal", "boat", "car" };
     String[] notSorted = { "boat", "car", "animal" };
+
     StdOut.println("isSorted(['animal', 'boat', 'car']): " + isSorted(sorted));
     StdOut.println("isSorted(['boat', 'car', 'animal']): " + isSorted(notSorted));
   }

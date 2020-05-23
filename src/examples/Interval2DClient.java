@@ -5,22 +5,21 @@ import edu.princeton.cs.algs4.StdOut;
 import edu.princeton.cs.algs4.StdRandom;
 
 /**
+ * Interval2DClient
  * Type: Snippet
- * Description: Interval2D test client.
+ * Description: Interval2DClient test client.
+ * Chapter: 1
+ * Section: 2
  * Ref: p. 76
- * Compilation: javac Interval2DExample.java
- * Execution: java Interval2DExample <xmin> <xmax> <ymin> <ymax> <trials>
+ * Compilation: javac Interval2DClient.java
+ * Execution: java Interval2DClient <xmin> <xmax> <ymin> <ymax> <trials>
+ * Example(s):
  *
- * $ java Interval2DExample .2 .5 .5 .6 1000
+ * $ java Interval2DClient .2 .5 .5 .6 1000
  * 26 hits
  * area = 0.03
  */
-
-/**
- * Interval2DExample
- */
-public class Interval2DExample {
-
+public class Interval2DClient {
   public static void main(String[] args) throws Exception {
     if (args.length != 5) {
       throw new Error("You must provide: <double_xmin> <double_xmax> <double_ymin> <double_ymax> <int_trials>");
@@ -39,16 +38,19 @@ public class Interval2DExample {
     box.draw();
 
     Counter counter = new Counter("hits");
+
     for (int t = 0; t < trials; t++) {
       double x = StdRandom.uniform(0.0, 1.0);
       double y = StdRandom.uniform(0.0, 1.0);
       Point2D p = new Point2D(x, y);
+
       if (box.contains(p)) {
         counter.increment();
       } else {
         p.draw();
       }
     }
+
     StdOut.println(counter);
     StdOut.printf("area = %.2f\n", box.area());
   }

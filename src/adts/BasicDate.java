@@ -16,15 +16,15 @@ import edu.princeton.cs.algs4.StdOut;
  * new BasicDate('9/27/1987'): 9/27/1987
  *
  * equals()
- * Is 9/27/1987 equals to 9/27/1987? true
- * Is 9/27/1987 equals to 9/27/1987? true
- * Is 9/27/1987 equals to null? false
- * Is 9/27/1987 equals to 9/27/1988? false
- * Is 9/27/1987 equals to 10/27/1988? false
- * Is 9/27/1987 equals to 9/26/1988? false
+ * Is 9/27/1987 equals to null ? false
+ * Is 9/27/1987 equals to 9/27/1987 ? true
+ * Is 9/27/1987 equals to 9/27/1988 ? false
+ * Is 9/27/1987 equals to 9/27/1986 ? false
  *
  * compareTo()
- * 9/27/1987 <= 9/27/1987 ? true
+ * 9/27/1987 compareTo 9/27/1987 ? 0
+ * 9/27/1987 compareTo 9/27/1988 ? -1
+ * 9/27/1987 compareTo 9/27/1986 ? 1
  */
 public class BasicDate implements Comparable<BasicDate> {
   private final int month;
@@ -117,21 +117,22 @@ public class BasicDate implements Comparable<BasicDate> {
     int y = Integer.parseInt(args[2]);
 
     BasicDate yourDate = new BasicDate(m, d, y);
+    BasicDate equal = new BasicDate(yourDate.toString());
+    BasicDate greater = new BasicDate(m, d, y + 1);
+    BasicDate smaller = new BasicDate(m, d, y - 1);
 
     StdOut.println("new BasicDate(" + m + ", " + d + ", " + y + "): " + yourDate);
     StdOut.println("new BasicDate('" + yourDate.toString() + "'): " + new BasicDate(yourDate.toString()));
 
-    BasicDate date = new BasicDate(9, 27, 1987);
-
     StdOut.println("\nequals()");
-    StdOut.printf("Is %s equals to %s? %b\n", yourDate, date, yourDate.equals(date));
-    StdOut.printf("Is %s equals to %s? %b\n", yourDate, "9/27/1987", yourDate.equals(new BasicDate(9, 27, 1987)));
-    StdOut.printf("Is %s equals to %s? %b\n", yourDate, null, yourDate.equals(null));
-    StdOut.printf("Is %s equals to %s? %b\n", yourDate, "9/27/1988", yourDate.equals(new BasicDate(9, 27, 1988)));
-    StdOut.printf("Is %s equals to %s? %b\n", yourDate, "10/27/1988", yourDate.equals(new BasicDate(10, 27, 1988)));
-    StdOut.printf("Is %s equals to %s? %b\n", yourDate, "9/26/1988", yourDate.equals(new BasicDate(9, 26, 1988)));
+    StdOut.printf("Is %s equals to %s ? %b\n", yourDate, null, yourDate.equals(null));
+    StdOut.printf("Is %s equals to %s ? %b\n", yourDate, equal, yourDate.equals(equal));
+    StdOut.printf("Is %s equals to %s ? %b\n", yourDate, greater, yourDate.equals(greater));
+    StdOut.printf("Is %s equals to %s ? %b\n", yourDate, smaller, yourDate.equals(smaller));
 
     StdOut.println("\ncompareTo()");
-    StdOut.printf("%s <= %s ? %s\n", yourDate, date, yourDate.compareTo(date) <= 0);
+    StdOut.printf("%s compareTo %s ? %d\n", yourDate, equal, yourDate.compareTo(equal));
+    StdOut.printf("%s compareTo %s ? %d\n", yourDate, greater, yourDate.compareTo(greater));
+    StdOut.printf("%s compareTo %s ? %d\n", yourDate, smaller, yourDate.compareTo(smaller));
   }
 }

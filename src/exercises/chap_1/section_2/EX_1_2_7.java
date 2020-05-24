@@ -1,22 +1,22 @@
 import edu.princeton.cs.algs4.StdOut;
 
 /**
- * Compilation: javac E1207.java
- * Execution: java E1207 <string>
+ * Exercise: 1.2.7
+ * Description: Mystery
+ * Compilation: javac EX_1_2_7.java
+ * Execution: java EX_1_2_7 <string>
+ * Example(s):
  *
- * $ java E1207 programming
+ * $ java EX_1_2_7 programming
  * programming -> gnimmargorp
  */
-
-/**
- * E1207
- */
-public class E1207 {
-
+public class EX_1_2_7 {
   public static String mystery(String s) {
     int n = s.length();
+
     if (n <= 1)
       return s;
+
     String a = s.substring(0, n / 2);
     String b = s.substring(n / 2, n);
 

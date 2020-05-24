@@ -4,22 +4,31 @@ import edu.princeton.cs.algs4.StdIn;
 import edu.princeton.cs.algs4.StdOut;
 
 /**
- * Compilation: javac E1209.java
- * Execution: java E1209 <whitelist_file> < <input_file>
+ * Exercise: 1.2.9
+ * Description: Binary Search + Counter
+ * Compilation: javac EX_1_2_9.java
+ * Execution: java EX_1_2_9 <whitelist_file> < <input_file>
+ * Example(s):
  *
- * $ java E1209 ~/algs4-data/tinyW.txt < ~/algs4-data/tinyT.txt | more
+ * $ java EX_1_2_9 ~/algs4-data/tinyW.txt < ~/algs4-data/tinyT.txt
  * 50
  * 99
  * 13
  * 18 keys examined with Binary Search
+ *
+ * $ java EX_1_2_9 ~/algs4-data/largeW.txt < ~/algs4-data/largeT.txt
+ * ... # truncated
+ * 2853029
+ * 29798919
+ * 9505145
+ * 32449528
+ * 38862597
+ * 69830567
+ * 10000000 keys examined with Binary Search
  */
-
-/**
- * E1209. Binary Search + Counter
- */
-public class E1209 {
+public class EX_1_2_9 {
   /**
-   * BinarySearch
+   * BinarySearch + Counter
    */
   public static int indexOf(int[] a, int key, Counter counter) {
     int lo = 0;
@@ -29,6 +38,7 @@ public class E1209 {
 
     while (lo <= hi) {
       int mid = lo + (hi - lo) / 2;
+
       if (key < a[mid])
         hi = mid - 1;
       else if (key > a[mid])
@@ -54,6 +64,7 @@ public class E1209 {
 
     while (!StdIn.isEmpty()) {
       int key = StdIn.readInt();
+
       if (indexOf(whitelist, key, counter) == -1)
         StdOut.println(key);
     }

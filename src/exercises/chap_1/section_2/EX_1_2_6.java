@@ -1,18 +1,16 @@
 import edu.princeton.cs.algs4.StdOut;
 
 /**
- * Compilation: javac E1206.java
- * Execution: java E1206 <string1> <string2>
+ * Exercise: 1.2.6
+ * Description: Circular Shift
+ * Compilation: javac EX_1_2_6.java
+ * Execution: java EX_1_2_6 <string1> <string2>
+ * Example(s):
  *
- * $ java E1206 ACTGACG gacgact
- * true
+ * $ java EX_1_2_6 ACTGACG gacgact
+ * 'ACTGACG' & 'gacgact' = true
  */
-
-/**
- * E1206
- */
-public class E1206 {
-
+public class EX_1_2_6 {
   public static boolean isCircularShift(String s, String t) {
     return s.length() == t.length() && (s + s).toLowerCase().indexOf(t.toLowerCase()) >= 0;
   }

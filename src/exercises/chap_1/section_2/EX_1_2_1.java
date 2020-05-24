@@ -4,20 +4,19 @@ import edu.princeton.cs.algs4.StdOut;
 import edu.princeton.cs.algs4.StdRandom;
 
 /**
- * Compilation: javac E1201.java
- * Execution: java E1201 <n>
+ * Exercise: 1.2.1
+ * Description: Point2D Client
+ * Compilation: javac EX_1_2_1.java
+ * Execution: java EX_1_2_1 <n>
+ * Example(s):
  *
- * $ java E1201 100
- * Min distance: 0.010434
+ * $ java EX_1_2_1 10000
+ * Min distance: 0.000079
  */
-
-/**
- * E1201
- */
-public class E1201 {
-
+public class EX_1_2_1 {
   public static Point2D[] generateRandomPoints(int n) {
     StdDraw.setPenColor(StdDraw.BLACK);
+
     Point2D[] points = new Point2D[n];
 
     for (int i = 0; i < n; i++) {
@@ -34,6 +33,8 @@ public class E1201 {
 
   /**
    * A brute force approach
+   * to get the closest pair
+   * of point.
    */
   public static double getMinDistance(Point2D[] points) throws Exception {
     if (points.length < 2) {
@@ -46,6 +47,7 @@ public class E1201 {
     for (int i = 0; i < length - 1; i++) {
       for (int j = i + 1; j < length; j++) {
         double distance = points[i].distanceTo(points[j]);
+
         if (distance < minDistance) {
           minDistance = distance;
         }
@@ -62,6 +64,7 @@ public class E1201 {
 
     int n = Integer.parseInt(args[0]);
     Point2D[] points = generateRandomPoints(n);
+
     StdOut.printf("Min distance: %f\n", getMinDistance(points));
   }
 }

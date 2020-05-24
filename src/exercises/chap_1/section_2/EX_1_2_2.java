@@ -5,23 +5,22 @@ import edu.princeton.cs.algs4.StdRandom;
 import java.util.Arrays;
 
 /**
- * Compilation: javac E1202.java
- * Execution: java E1202 <n>
+ * Exercise: 1.2.2
+ * Description: Interval1D client
+ * Compilation: javac EX_1_2_2.java
+ * Execution: java EX_1_2_2 <n>
+ * Example(s):
  *
- * $ java E1202 3
- * 1 2
- * 2 3
+ * $ java EX_1_2_2 3
+ * Reading from StdIn...
+ * > 1 2
+ * > 2 3
  * [2.0, 3.0] intersects [1.0, 2.0]
- * 1 5
+ * > 1 5
  * [1.0, 5.0] intersects [1.0, 2.0]
  * [1.0, 5.0] intersects [2.0, 3.0]
  */
-
-/**
- * E1202
- */
-public class E1202 {
-
+public class EX_1_2_2 {
   public static String printIntervals(Interval1D[] intervals) {
     String output = "";
 
@@ -50,6 +49,8 @@ public class E1202 {
     int i = 0;
     double temp;
 
+    StdOut.println("Reading from StdIn...");
+
     while (i < n) {
       double min = StdIn.readDouble();
       double max = StdIn.readDouble();
@@ -61,6 +62,7 @@ public class E1202 {
       }
 
       Interval1D interval = new Interval1D(min, max);
+
       intersectsWith(interval, intervals, i);
       intervals[i] = interval;
       i++;

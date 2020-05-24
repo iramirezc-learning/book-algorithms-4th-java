@@ -1,20 +1,18 @@
 import edu.princeton.cs.algs4.StdOut;
 
 /**
- * Compilation: javac E1205.java
- * Execution: java E1205
+ * Exercise: 1.2.5
+ * Compilation: javac EX_1_2_5.java
+ * Execution: java EX_1_2_5
+ * Example(s):
  *
- * $ java E1205
+ * $ java EX_1_2_5
  * Hello World
  */
-
-/**
- * E1205
- */
-public class E1205 {
-
+public class EX_1_2_5 {
   public static void main(String[] args) {
     String s = "Hello World";
+
     s.toUpperCase();
     s.substring(6, 11);
     StdOut.println(s);

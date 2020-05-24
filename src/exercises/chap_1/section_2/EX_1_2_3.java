@@ -5,18 +5,17 @@ import edu.princeton.cs.algs4.StdOut;
 import edu.princeton.cs.algs4.StdRandom;
 
 /**
- * Compilation: javac E1203.java
- * Execution: java E1203 <int_n> <double_min> <double_max>
+ * Exercise: 1.2.3
+ * Description: Interval2D client
+ * Compilation: javac EX_1_2_3.java
+ * Execution: java EX_1_2_3 <int_n> <double_min> <double_max>
+ * Example(s):
  *
- * $ java E1203 5 .3 .7
+ * $ java EX_1_2_3 5 .3 .7
  * Total intersections: 2
  * Total contained: 1
  */
-
-/**
- * E1203
- */
-public class E1203 {
+public class EX_1_2_3 {
   public static double[] getRandomMinAndMax(double min, double max) {
     double[] values = new double[2];
 
@@ -51,8 +50,10 @@ public class E1203 {
   public static boolean isContained(Point2D x, Point2D y, Interval2D interval) {
     if (!interval.contains(x))
       return false;
+
     if (!interval.contains(y))
       return false;
+
     return true;
   }
 
@@ -76,6 +77,7 @@ public class E1203 {
     int n = Integer.parseInt(args[0]);
     double min = Double.parseDouble(args[1]);
     double max = Double.parseDouble(args[2]);
+
     Interval2D[] intervals = new Interval2D[n];
     int totalIntersections = 0;
     int totalContained = 0;

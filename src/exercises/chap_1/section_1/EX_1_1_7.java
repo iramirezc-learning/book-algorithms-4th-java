@@ -1,7 +1,7 @@
 import edu.princeton.cs.algs4.StdOut;
 
 /**
- * Exercise 1.1.7
+ * Exercise: 1.1.7
  * Description: Test the code.
  * Compilation: javac EX_1_1_7.java
  * Execution: java EX_1_1_7

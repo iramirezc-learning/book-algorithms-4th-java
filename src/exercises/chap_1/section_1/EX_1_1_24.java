@@ -1,7 +1,7 @@
 import edu.princeton.cs.algs4.StdOut;
 
 /**
- * Exercise 1.1.24
+ * Exercise: 1.1.24
  * Description: Euclidean with printed recursive calls.
  * Compilation: javac EX_1_1_24.java
  * Execution: java EX_1_1_24 <int1> <int2>

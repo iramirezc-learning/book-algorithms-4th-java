@@ -1,7 +1,7 @@
 import edu.princeton.cs.algs4.StdOut;
 
 /**
- * Exercise 1.1.26
+ * Exercise: 1.1.26
  * Description: Testing Ascending Order
  * Compilation: javac EX_1_1_26.java
  * Execution: java EX_1_1_26

@@ -3,7 +3,7 @@ import edu.princeton.cs.algs4.StdRandom;
 import java.util.Arrays;
 
 /**
- * Exercise 1.1.39
+ * Exercise: 1.1.39
  * Description: Duplicated Keys with BS
  * Compilation: javac EX_1_1_39.java
  * Execution: java EX_1_1_39 <trials>

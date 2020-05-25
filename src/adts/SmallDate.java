@@ -4,8 +4,7 @@ import edu.princeton.cs.algs4.StdOut;
  * SmallDate
  * Type: ADT
  * Description: An abstract data type to encapsulate dates (alternative implementation).
- * Chapter: 1
- * Section: 2
+ * Section: 1.2
  * Ref: p. 91
  * Compilation: javac SmallDate.java
  * Execution: java SmallDate <month> <day> <year>

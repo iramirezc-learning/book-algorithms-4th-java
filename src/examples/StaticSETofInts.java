@@ -4,8 +4,7 @@ import java.util.Arrays;
  * StaticSETofInts
  * Type: Snippet
  * Description: Binary Search as an OO program.
- * Chapter: 1
- * Section: 2
+ * Section: 1.2
  * Ref: p. 99
  * Compilation: javac StaticSETofInts.java
  */

@@ -4,8 +4,7 @@ import edu.princeton.cs.algs4.StdOut;
  * MathUtils
  * Type: Snippet
  * Description: Typical implementations of static methods.
- * Chapter: 1
- * Section: 1
+ * Section: 1.1
  * Ref: p. 23
  * Compilation: javac MathUtils.java
  * Execution: java MathUtils

@@ -5,8 +5,7 @@ import java.util.Arrays;
 /**
  * Type: Snippet
  * Description: StdDraw plotting examples.
- * Chapter: 1
- * Section: 1
+ * Section: 1.1
  * Ref: p. 45
  * Compilation: javac StdDrawExamples.java
  * Execution: java StdDrawExamples <1-3> <numbers>

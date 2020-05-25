@@ -5,8 +5,7 @@ import edu.princeton.cs.algs4.StdRandom;
  * Accumulator
  * Type: ADT
  * Description: An abstract data type for accumulation data values.
- * Chapter: 1
- * Section: 2
+ * Section: 1.2
  * Ref: p. 93
  * Compilation: javac Accumulator.java
  * Execution: java Accumulator <trials>

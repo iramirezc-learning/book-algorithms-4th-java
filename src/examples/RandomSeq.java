@@ -5,8 +5,7 @@ import edu.princeton.cs.algs4.StdRandom;
  * RandomSeq
  * Type: Snippet
  * Description: Sample StdOut client.
- * Chapter: 1
- * Section: 1
+ * Section: 1.1
  * Ref: p. 37
  * Compilation: javac RandomSeq.java
  * Execution: java RandomSeq <numbers> <lo> <hi>

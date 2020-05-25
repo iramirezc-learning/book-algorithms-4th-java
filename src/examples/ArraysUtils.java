@@ -5,8 +5,7 @@ import java.util.Arrays;
  * ArraysUtils
  * Type: Snippet
  * Description: Typical array-processing code.
- * Chapter: 1
- * Section: 1
+ * Section: 1.1
  * Ref: p. 21
  * Compilation: javac ArraysUtils.java
  * Execution: java ArraysUtils

@@ -7,9 +7,8 @@ import edu.princeton.cs.algs4.StdOut;
  * BinarySearch
  * Type: Algorithm
  * Description: Returns the index of the 'key' in the array 'a'.
- * Chapter: 1
- * Section: 1
- * Ref: Recursive p. 25, p. 47
+ * Section: 1.1
+ * Ref: p. 25 (recursive), 47
  * Compilation: javac BinarySearch.java
  * Execution: java BinarySearch <whitelist_file> < <input_file> | more
  * Example(s):

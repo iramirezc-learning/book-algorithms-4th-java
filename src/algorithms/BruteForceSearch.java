@@ -6,8 +6,7 @@ import edu.princeton.cs.algs4.StdOut;
  * BruteForceSearch
  * Type: Algorithm
  * Description: Returns the index of the 'key' in the array 'a'.
- * Chapter: 1
- * Section: 1
+ * Section: 1.1
  * Ref: p. 48
  * Compilation: javac BruteForceSearch.java
  * Execution: java BruteForceSearch <whitelist_file> < <input_file> | more

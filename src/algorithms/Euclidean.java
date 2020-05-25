@@ -4,8 +4,7 @@ import edu.princeton.cs.algs4.StdOut;
  * Euclidean
  * Type: Algorithm
  * Description: Finds the Greatest Common Divisor of two positive integers.
- * Chapter: 1
- * Section: 1
+ * Section: 1.1
  * Ref: p. 4
  * Compilation: javac Euclidean.java
  * Execution: java Euclidean <number1> <number2>

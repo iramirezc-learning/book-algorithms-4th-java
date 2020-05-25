@@ -4,9 +4,8 @@ import edu.princeton.cs.algs4.StdOut;
  * BasicDate
  * Type: ADT
  * Description: An abstract data type to encapsulate dates.
- * Chapter: 1
- * Section: 2
- * Ref: p. 91, p.103, p. 247
+ * Section: 1.2
+ * Ref: p. 91, 103, 247
  * Compilation: javac BasicDate.java
  * Execution: java BasicDate <month> <day> <year>
  * Example(s):

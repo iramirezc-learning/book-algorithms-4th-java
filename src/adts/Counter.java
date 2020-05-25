@@ -5,8 +5,7 @@ import edu.princeton.cs.algs4.StdRandom;
  * Counter
  * Type: ADT
  * Description: An abstract data type for a simple counter.
- * Chapter: 1
- * Section: 2
+ * Section: 1.2
  * Ref: p. 85, 89
  * Compilation: javac Counter.java
  * Execution: java Counter <trials>

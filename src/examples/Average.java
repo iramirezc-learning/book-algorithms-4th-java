@@ -6,8 +6,7 @@ import edu.princeton.cs.algs4.StdRandom;
  * Average
  * Type: Snippet
  * Description: Sample StdIn client.
- * Chapter: 1
- * Section: 1
+ * Section: 1.1
  * Ref: p. 39
  * Compilation: javac Average.java
  * Execution: java Average < <standard_input>

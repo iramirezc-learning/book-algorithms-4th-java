@@ -6,8 +6,7 @@ import java.util.Arrays;
  * StringUtils
  * Type: Snippet
  * Description: Typical string-processing code
- * Chapter: 1
- * Section: 2
+ * Section: 1.2
  * Ref: p. 81
  * Compilation: javac StringUtils.java
  * Execution: java StringUtils < ~/algs4-data/custom/cats.txt

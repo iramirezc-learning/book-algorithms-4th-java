@@ -8,8 +8,7 @@ import edu.princeton.cs.algs4.StdRandom;
  * Interval2DClient
  * Type: Snippet
  * Description: Interval2DClient test client.
- * Chapter: 1
- * Section: 2
+ * Section: 1.2
  * Ref: p. 76
  * Compilation: javac Interval2DClient.java
  * Execution: java Interval2DClient <xmin> <xmax> <ymin> <ymax> <trials>

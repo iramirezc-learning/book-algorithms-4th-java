@@ -5,8 +5,7 @@ import edu.princeton.cs.algs4.Out;
  * Cat
  * Type: Snippet
  * Description: Concatenates multiple files into one.
- * Chapter: 1
- * Section: 2
+ * Section: 1.2
  * Ref: p. 82
  * Compilation: javac Cat.java
  * Execution: java Cat <input_file_1> <input_file_2> <output_file>

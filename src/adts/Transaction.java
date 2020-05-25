@@ -4,8 +4,7 @@ import edu.princeton.cs.algs4.StdOut;
  * Transaction
  * Type: ADT
  * Description: An abstract data type to encapsulate transactions.
- * Chapter: 1
- * Section: 2
+ * Section: 1.2
  * Ref: p. 79
  * Compilation: javac Transaction.java
  * Execution: java Transaction

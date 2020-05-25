@@ -6,8 +6,7 @@ import edu.princeton.cs.algs4.StdOut;
  * Whitelist
  * Type: Snippet
  * Description: A client for StaticSETofInts that uses Binary Search
- * Chapter: 1
- * Section: 2
+ * Section: 1.2
  * Ref: p. 99
  * Compilation: javac Whitelist.java
  * Execution: java Whitelist < <input_file>

@@ -3,19 +3,17 @@ import edu.princeton.cs.algs4.StdOut;
 import java.util.Iterator;
 
 /**
+ * Stack
  * Type: ADT
  * Description: Generic Stack implementation based on a linked-list ADT.
+ * Section: 1.3
  * Ref: p. 147, 149, 155
- *
  * Compilation: javac Stack.java
  * Execution: java Stack < <input_file>
+ * Example(s):
  *
  * $ java Stack < ~/algs4-data/tobe.txt
  * to be not that or be (2 left on stack)
- */
-
-/**
- * Stack
  */
 public class Stack<Item> implements Iterable<Item> {
   /**
@@ -39,6 +37,48 @@ public class Stack<Item> implements Iterable<Item> {
      * Pointer to nex Node
      */
     Node next;
+  }
+
+  /**
+   * Checks if the Stack is empty
+   */
+  public boolean isEmpty() {
+    return first == null;
+  }
+
+  /**
+   * Returns the size of the Stack
+   */
+  public int size() {
+    return n;
+  }
+
+  /**
+   * Add an item to the Stack as first.
+   */
+  public void push(Item item) {
+    Node oldFirst = first;
+    first = new Node();
+    first.item = item;
+    first.next = oldFirst;
+    n++;
+  }
+
+  /**
+   * Removes and returns the first item from the Stack
+   */
+  public Item pop() {
+    Item item = first.item;
+    first = first.next;
+    n--;
+    return item;
+  }
+
+  /**
+   * Returns an iterator
+   */
+  public Iterator<Item> iterator() {
+    return new ListIterator();
   }
 
   /**
@@ -71,48 +111,6 @@ public class Stack<Item> implements Iterable<Item> {
       current = current.next;
       return item;
     }
-  }
-
-  /**
-   * Add an item to the Stack as first.
-   */
-  public void push(Item item) {
-    Node oldFirst = first;
-    first = new Node();
-    first.item = item;
-    first.next = oldFirst;
-    n++;
-  }
-
-  /**
-   * Removes and returns the first item from the Stack
-   */
-  public Item pop() {
-    Item item = first.item;
-    first = first.next;
-    n--;
-    return item;
-  }
-
-  /**
-   * Checks if the Stack is empty
-   */
-  public boolean isEmpty() {
-    return first == null;
-  }
-
-  /**
-   * Returns the size of the Stack
-   */
-  public int size() {
-    return n;
-  }
-
-  /**
-   * Returns an iterator
-   */
-  public Iterator<Item> iterator() {
-    return new ListIterator();
   }
 
   /**

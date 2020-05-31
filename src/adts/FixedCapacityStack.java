@@ -2,26 +2,24 @@ import edu.princeton.cs.algs4.StdIn;
 import edu.princeton.cs.algs4.StdOut;
 
 /**
+ * FixedCapacityStack
  * Type: ADT
  * Description: A Fixed-Capacity Generic Stack
+ * Section: 1.3
  * Ref: p. 135
- *
  * Compilation: javac FixedCapacityStack.java
  * Execution: java FixedCapacityStack < <standard_input>
+ * Example(s):
  *
  * $ java FixedCapacityStack < ~/algs4-data/tobe.txt
  * to be not that or be (2 left on stack)
- */
-
-/**
- * FixedCapacityStack
  */
 public class FixedCapacityStack<Item> {
   private Item[] stack;
   private int n = 0;
 
-  public FixedCapacityStack(int capacity) {
-    stack = (Item[]) new Object[capacity];
+  public FixedCapacityStack(int size) {
+    stack = (Item[]) new Object[size];
   }
 
   public boolean isEmpty() {
@@ -41,7 +39,8 @@ public class FixedCapacityStack<Item> {
   }
 
   public static void main(String[] args) {
-    FixedCapacityStack<String> stack = new FixedCapacityStack<String>(100);
+    FixedCapacityStack<String> stack;
+    stack = new FixedCapacityStack<String>(100);
 
     StdOut.println("Reading from Standard Input...");
 

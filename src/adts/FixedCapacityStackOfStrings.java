@@ -2,23 +2,21 @@ import edu.princeton.cs.algs4.StdIn;
 import edu.princeton.cs.algs4.StdOut;
 
 /**
+ * FixedCapacityStackOfStrings
  * Type: ADT
  * Description: A Fixed-Capacity Stack of Strings
+ * Section: 1.3
  * Ref: p. 133
- *
  * Compilation: javac FixedCapacityStackOfStrings.java
  * Execution: java FixedCapacityStackOfStrings < <standard_input>
+ * Example(s):
  *
  * $ java FixedCapacityStackOfStrings < ~/algs4-data/tobe.txt
  * to be not that or be (2 strings left on stack)
  */
-
-/**
- * FixedCapacityStackOfStrings
- */
 public class FixedCapacityStackOfStrings {
   private String[] stack;
-  private int n = 0;
+  private int n;
 
   public FixedCapacityStackOfStrings(int size) {
     stack = new String[size];
@@ -32,8 +30,8 @@ public class FixedCapacityStackOfStrings {
     return n;
   }
 
-  public void push(String s) {
-    stack[n++] = s;
+  public void push(String item) {
+    stack[n++] = item;
   }
 
   public String pop() {
@@ -41,7 +39,8 @@ public class FixedCapacityStackOfStrings {
   }
 
   public static void main(String[] args) {
-    FixedCapacityStackOfStrings stack = new FixedCapacityStackOfStrings(100);
+    FixedCapacityStackOfStrings stack;
+    stack = new FixedCapacityStackOfStrings(100);
 
     StdOut.println("Reading from Standard Input...");
 
